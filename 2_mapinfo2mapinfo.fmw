@@ -2,8 +2,10 @@
 #! <WORKSPACE
 #    Command-line to run this workspace:
 #        "C:\Program Files\FME\fme.exe" C:\Users\1\FME_processing\2_mapinfo2mapinfo.fmw
-#              --DestDataset_MAPINFO_3 "C:\LAYER_T\RES"
-#              --SourceDataset_MAPINFO "C:\LAYER_T\51_01_0000000_Parcel.TAB"
+#              --SourceDataset_MAPINFO "C:\LAYER_T\51_01_0000000.TAB"
+#              --FEATURE_TYPES ""
+#              --Out_name ""
+#              --DestDataset_MAPINFO "C:\LAYER_T\RES"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -12,14 +14,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="3209.89 159.056"
-#!   DOC_TOP_LEFT="-1138.34 261.506"
+#!   DOC_EXTENTS="2129.49 131"
+#!   DOC_TOP_LEFT="20 -347.5"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="19801"
-#!   FME_DOCUMENT_GUID="feef672a-66d8-4753-a10a-696a2e6899d7"
-#!   FME_DOCUMENT_PRIORGUID="e34e2b11-bc55-4435-8bd5-2de1dd12baab,3a52004f-b3bd-4e19-97cc-1ccc8959a838,8ea75f81-3c8e-4929-b7a9-649e054389cd,b41f8e2b-90a4-4670-b064-929aa4f25c1d"
+#!   FME_DOCUMENT_GUID="0c93e8d6-86b9-4d14-b98a-f6ce0db841e2"
+#!   FME_DOCUMENT_PRIORGUID="3b0251f5-1d82-4d66-8dbd-19d6e0307acd,856fc0fa-f2e4-49b0-9f2a-c6c4f590d43e,1af56341-23a7-4384-a978-812cbea86f20"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -28,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2019.2.0.0 (20191105 - Build 19801 - WIN64)"
-#!   LAST_SAVE_DATE="2019-12-04T22:53:09"
+#!   LAST_SAVE_DATE="2019-12-05T22:53:59"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -47,10 +49,10 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-1319.46 655.562"
+#!   VIEW_POSITION="-745.007 217.502"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="90"
+#!   ZOOM_SCALE="100"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -66,7 +68,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="mapinfo_text_fontbgcolor integer mapinfo_text_string char(255) mapinfo_text_line_end_y float mapinfo_rounding float mapinfo_symbol_style smallint mapinfo_text_fontname char(50) mapinfo_symbol_color integer mapinfo_text_fontstyle_shadow char(10) mapinfo_brush_pattern smallint mapinfo_text_line_pen_width integer fme_feature_type char(50) mapinfo_text_line_pen_pattern integer mapinfo_text_fontstyle_outline char(10) mapinfo_type char(25) mapinfo_centroid_x float fme_dataset char(50) mapinfo_brush_background integer mapinfo_text_fontstyle smallint fme_text_string char(50) mapinfo_pen_color integer mapinfo_text_fontstyle_italic char(10) mapinfo_text_fontfgcolor integer fme_geometry char(50) mapinfo_brush_foreground integer multi_reader_id integer mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_linetype integer mapinfo_symbol_file_name char(255) mapinfo_text_fontstyle_bold char(10) mapinfo_text_fontstyle_opaque char(10) fme_fill_color char(50) mapinfo_text_fontstyle_expanded char(10) multi_reader_type char(50) mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_line_end_x float fme_secondary_axis float mapinfo_brush_transparent logical mapinfo_sweep_angle float mapinfo_text_fontsize float mapinfo_center_ycoord float mapinfo_text_fontstyle_blink char(10) mapinfo_symbol_shape integer fme_primary_axis float mapinfo_text_height float fme_rotation float mapinfo_pen_pattern smallint fme_sweep_angle float mapinfo_symbol_size integer mapinfo_center_xcoord float mapinfo_text_line_pen_color integer mapinfo_symbol_font char(50) mapinfo_rotation float mapinfo_text_justification char(30) fme_basename char(50) mapinfo_pen_width smallint multi_reader_full_id integer mapinfo_text_width float mapinfo_secondary_axis float mapinfo_centroid_y float fme_text_size float fme_color char(50) mapinfo_text_fontstyle_inverse char(10) mapinfo_rounding_height float mapinfo_primary_axis float multi_reader_keyword char(50) mapinfo_text_fontstyle_underline char(10) mapinfo_text_fontstyle_halo char(10) fme_start_angle float mapinfo_smooth logical mapinfo_start_angle float mapinfo_symbol_angle float mapinfo_text_spacing smallint fme_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis float mapinfo_text_line_pen_width integer mapinfo_text_fontstyle smallint mapinfo_start_angle float mapinfo_text_fontstyle_shadow char(10) mapinfo_symbol_file_name char(255) mapinfo_primary_axis float mapinfo_rounding float mapinfo_text_width float mapinfo_brush_foreground integer mapinfo_text_fontbgcolor integer fme_text_string char(50) mapinfo_rotation float mapinfo_text_fontstyle_underline char(10) mapinfo_text_justification char(30) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer mapinfo_brush_pattern smallint mapinfo_pen_width smallint mapinfo_center_ycoord float fme_type char(50) mapinfo_text_line_pen_pattern integer fme_basename char(50) mapinfo_text_fontname char(50) mapinfo_text_linetype integer fme_geometry char(50) mapinfo_center_xcoord float mapinfo_smooth logical fme_text_size float mapinfo_centroid_y float mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontsize float mapinfo_sweep_angle float mapinfo_symbol_shape integer multi_reader_id integer mapinfo_type char(25) mapinfo_pen_color integer multi_reader_full_id integer fme_color char(50) mapinfo_text_fontstyle_blink char(10) mapinfo_brush_transparent logical mapinfo_text_string char(255) fme_feature_type char(50) mapinfo_text_spacing smallint mapinfo_pen_pattern smallint mapinfo_symbol_size integer fme_primary_axis float fme_fill_color char(50) mapinfo_text_fontfgcolor integer mapinfo_rounding_height float fme_sweep_angle float mapinfo_secondary_axis float mapinfo_symbol_font char(50) mapinfo_symbol_style smallint mapinfo_text_line_pen_color integer fme_dataset char(50) multi_reader_keyword char(50) mapinfo_centroid_x float mapinfo_text_fontstyle_bold char(10) mapinfo_symbol_color integer mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_italic char(10) fme_start_angle float mapinfo_text_fontstyle_strikeout char(10) mapinfo_symbol_angle float mapinfo_text_height float mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_line_end_x float fme_rotation float mapinfo_text_line_end_y float mapinfo_text_fontstyle_outline char(10) mapinfo_text_fontstyle_halo char(10) multi_reader_type char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -76,7 +78,7 @@
 #!   DATASET_TYPE="FILEDIR"
 #!   GENERATE_FME_BUILD_NUM="19801"
 #!   COORDSYS=""
-#!   FEATURE_TYPES=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
 #!   MAX_FEATURES=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
 #!   MIN_FEATURES=""
@@ -111,7 +113,7 @@
 #!   IS_SOURCE="false"
 #!   ROLE="WRITER"
 #!   FORMAT="MAPINFO"
-#!   DATASET="$(DestDataset_MAPINFO_3)"
+#!   DATASET="$(DestDataset_MAPINFO)"
 #!   KEYWORD="MAPINFO_2"
 #!   MULTI_GEOM_ALLOWED="true"
 #!   ATTR_MAX_LENGTH="31"
@@ -120,7 +122,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="mapinfo_text_fontbgcolor integer mapinfo_text_string char(255) mapinfo_text_line_end_y float mapinfo_rounding float mapinfo_symbol_style smallint mapinfo_text_fontname char(50) mapinfo_symbol_color integer mapinfo_text_fontstyle_shadow char(10) mapinfo_brush_pattern smallint mapinfo_text_line_pen_width integer fme_feature_type char(50) mapinfo_text_line_pen_pattern integer mapinfo_text_fontstyle_outline char(10) mapinfo_type char(25) mapinfo_centroid_x float fme_dataset char(50) mapinfo_brush_background integer mapinfo_text_fontstyle smallint fme_text_string char(50) mapinfo_pen_color integer mapinfo_text_fontstyle_italic char(10) mapinfo_text_fontfgcolor integer fme_geometry char(50) mapinfo_brush_foreground integer mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_linetype integer mapinfo_symbol_file_name char(255) mapinfo_text_fontstyle_bold char(10) mapinfo_text_fontstyle_opaque char(10) fme_fill_color char(50) mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_line_end_x float fme_secondary_axis float mapinfo_brush_transparent logical mapinfo_sweep_angle float mapinfo_text_fontsize float mapinfo_center_ycoord float mapinfo_text_fontstyle_blink char(10) mapinfo_symbol_shape integer fme_primary_axis float mapinfo_text_height float fme_rotation float mapinfo_pen_pattern smallint fme_sweep_angle float mapinfo_symbol_size integer mapinfo_center_xcoord float mapinfo_text_line_pen_color integer mapinfo_symbol_font char(50) mapinfo_rotation float mapinfo_text_justification char(30) fme_basename char(50) mapinfo_pen_width smallint mapinfo_text_width float mapinfo_secondary_axis float mapinfo_centroid_y float fme_text_size float fme_color char(50) mapinfo_text_fontstyle_inverse char(10) mapinfo_rounding_height float mapinfo_primary_axis float mapinfo_text_fontstyle_underline char(10) mapinfo_text_fontstyle_halo char(10) fme_start_angle float mapinfo_smooth logical mapinfo_start_angle float mapinfo_symbol_angle float mapinfo_text_spacing smallint fme_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis float mapinfo_text_line_pen_width integer mapinfo_text_fontstyle smallint mapinfo_start_angle float mapinfo_text_fontstyle_shadow char(10) mapinfo_symbol_file_name char(255) mapinfo_primary_axis float mapinfo_rounding float mapinfo_text_width float mapinfo_brush_foreground integer mapinfo_text_fontbgcolor integer fme_text_string char(50) mapinfo_rotation float mapinfo_text_fontstyle_underline char(10) mapinfo_text_justification char(30) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer mapinfo_brush_pattern smallint mapinfo_pen_width smallint mapinfo_center_ycoord float fme_type char(50) mapinfo_text_line_pen_pattern integer fme_basename char(50) mapinfo_text_fontname char(50) mapinfo_text_linetype integer fme_geometry char(50) mapinfo_center_xcoord float mapinfo_smooth logical fme_text_size float mapinfo_centroid_y float mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontsize float mapinfo_sweep_angle float mapinfo_symbol_shape integer mapinfo_type char(25) mapinfo_pen_color integer fme_color char(50) mapinfo_text_fontstyle_blink char(10) mapinfo_brush_transparent logical mapinfo_text_string char(255) fme_feature_type char(50) mapinfo_text_spacing smallint mapinfo_pen_pattern smallint mapinfo_symbol_size integer fme_primary_axis float fme_fill_color char(50) mapinfo_text_fontfgcolor integer mapinfo_rounding_height float fme_sweep_angle float mapinfo_secondary_axis float mapinfo_symbol_font char(50) mapinfo_symbol_style smallint mapinfo_text_line_pen_color integer fme_dataset char(50) mapinfo_centroid_x float mapinfo_text_fontstyle_bold char(10) mapinfo_symbol_color integer mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_italic char(10) fme_start_angle float mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_height float mapinfo_symbol_angle float mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_line_end_x float fme_rotation float mapinfo_text_line_end_y float mapinfo_text_fontstyle_outline char(10) mapinfo_text_fontstyle_halo char(10)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[]= %~!@$&amp;#()^&apos;+-.,`;"
@@ -130,7 +132,7 @@
 #!   DATASET_TYPE="FILEDIR"
 #!   GENERATE_FME_BUILD_NUM="19801"
 #!   COORDSYS=""
-#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_EXPRESSION=""
 #!   FANOUT_GROUP="NO"
 #! >
 #! <METAFILE_PARAMETER
@@ -645,16 +647,56 @@
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="51_01_0000000_Parcel"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="mapinfo_text mapinfo_ellipse mapinfo_arc mapinfo_point mapinfo_polyline mapinfo_rectangle mapinfo_rounded_rectangle mapinfo_region mapinfo_custom_point mapinfo_font_point mapinfo_none mapinfo_collection"
+#!   POSITION="20 -235"
+#!   BOUNDING_RECT="20 -235 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="MAPINFO_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AccNumberZ" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AccountNum" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Area" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CadCost" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Category" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Coord_Name" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Utilizatio" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ByDoc" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Block_KN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Parcel_KN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Parcel_St" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SnglUseKN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sub_Num" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BoundName" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomType" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="XmlFile" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="51_01_0000000"
-#!   FEATURE_TYPE_NAME="$(SourceDataset_MAPINFO)"
+#!   NODE_NAME="51_01_0000000_Parcel"
+#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="6"
+#!   IDENTIFIER="5"
 #!   FEAT_GEOMTYPE="All"
-#!   POSITION="1605.5406109616652 332.50567505675053"
-#!   BOUNDING_RECT="1605.5406109616652 332.50567505675053 466.00106825772946 71"
-#!   ORDER="500000000000006"
+#!   POSITION="1557.4845748457492 -276.5"
+#!   BOUNDING_RECT="1557.4845748457492 -276.5 592.00106825772946 71"
+#!   ORDER="500000000000004"
 #!   COLLAPSED="true"
 #!   KEYWORD="MAPINFO_2"
 #!   PARMS_EDITED="true"
@@ -677,45 +719,8 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="BoundName" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="GeomType" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="XmlFile" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_dataset" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="51_01_0000000_Parcel"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="5"
-#!   FEAT_GEOMTYPE="mapinfo_text mapinfo_ellipse mapinfo_arc mapinfo_point mapinfo_polyline mapinfo_rectangle mapinfo_rounded_rectangle mapinfo_region mapinfo_custom_point mapinfo_font_point mapinfo_none mapinfo_collection"
-#!   POSITION="-1138.3449167825011 420.56211117666726"
-#!   BOUNDING_RECT="-1138.3449167825011 420.56211117666726 592.00106825772946 71"
-#!   ORDER="500000000000000"
-#!   COLLAPSED="true"
-#!   KEYWORD="MAPINFO_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AccNumberZ" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AccountNum" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Area" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CadCost" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Category" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Coord_Name" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Utilizatio" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ByDoc" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Block_KN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Parcel_KN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Parcel_St" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="SnglUseKN" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Sub_Num" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="BoundName" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomType" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="XmlFile" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -723,7 +728,7 @@
 #! <DATASET 
 #!   NAME="MAPINFO_1"
 #!   OVERRIDE="-MAPINFO_1_DATASET"
-#!   DATASET="MAPINFO_1/51_01_0000000_Parcel.TAB"
+#!   DATASET="MAPINFO_1/51_01_0000000.TAB"
 #! />
 #! </READER_DATASETS>
 #! <WRITER_DATASETS>
@@ -736,13 +741,23 @@
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI DIRNAME DestDataset_MAPINFO_3 Destination MapInfo Folder:"
-#!   DEFAULT_VALUE="C:\LAYER_T\RES"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo TAB File(s):"
+#!   DEFAULT_VALUE="C:\LAYER_T\51_01_0000000.TAB"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo TAB File(s):"
-#!   DEFAULT_VALUE="C:\LAYER_T\51_01_0000000_Parcel.TAB"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES &quot;C:&lt;backslash&gt;LAYER_T&lt;backslash&gt;51_01_0000000.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,UNENCODED_ATTR_PREFIX,\&quot;fme_ mapinfo_\&quot;,_MERGE_SCHEMAS,YES,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FILENAME_MUSTEXIST_OR_ATTR Out_name All_Files(*)|*.TAB Out_name:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_MAPINFO Destination MapInfo Folder:"
+#!   DEFAULT_VALUE="C:\LAYER_T\RES"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -754,12 +769,12 @@
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
 #! <TRANSFORMER
-#!   IDENTIFIER="4"
+#!   IDENTIFIER="3"
 #!   TYPE="Reprojector"
 #!   VERSION="4"
-#!   POSITION="372.50372503725021 332.50567505675053"
-#!   BOUNDING_RECT="372.50372503725021 332.50567505675053 878.00106825772946 71"
-#!   ORDER="500000000000003"
+#!   POSITION="650 -216.5"
+#!   BOUNDING_RECT="650 -216.5 454 71"
+#!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="19801"
@@ -782,6 +797,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="*XY-MT*"/>
 #!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -790,14 +807,14 @@
 #!     <XFORM_PARM PARM_NAME="RASTER_TOLERANCE" PARM_VALUE="0.0"/>
 #!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="Read from feature"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Перепроецирвание_в_план-схему_метры_"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
-#!   IDENTIFIER="7"
-#!   SOURCE_NODE="5"
-#!   TARGET_NODE="4"
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -806,9 +823,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="8"
-#!   SOURCE_NODE="4"
-#!   TARGET_NODE="6"
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="5"
 #!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -829,18 +846,22 @@
 
 FME_PYTHON_VERSION 37
 GUI IGNORE SourceDataset_MAPINFO_1,MAPINFO_IN_FME_GROUP_NAMED1_MAPINFO_1,MAPINFO_IN_FME_TABLE_PASSWORD_MAPINFO_1,MAPINFO_IN_USE_SEARCH_ENVELOPE_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MINX_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MINY_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MAXX_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MAXY_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MAPINFO_1,MAPINFO_IN_CLIP_TO_ENVELOPE_MAPINFO_1,MAPINFO_IN_NETWORK_AUTHENTICATION_MAPINFO_1,MAPINFO_OUT_FME_GROUP_NAMED1_MAPINFO_2,MAPINFO_OUT_VERSION_MAPINFO_2,MAPINFO_OUT_FME_GROUP_NAMED2_MAPINFO_2,MAPINFO_OUT_WRITE_REGION_CENTROIDS_MAPINFO_2,MAPINFO_OUT_TWO_POINT_LINE_AS_POLYLINE_MAPINFO_2,MAPINFO_OUT_STROKE_ARCS_MAPINFO_2,MAPINFO_OUT_FME_GROUP_NAMED3_MAPINFO_2,MAPINFO_OUT_COORDSYS_STATEMENT_MAPINFO_2,MAPINFO_OUT_MIF_MINX_MAPINFO_2,MAPINFO_OUT_MIF_MINY_MAPINFO_2,MAPINFO_OUT_MIF_MAXX_MAPINFO_2,MAPINFO_OUT_MIF_MAXY_MAPINFO_2,DestDataset_MAPINFO_2
-DEFAULT_MACRO DestDataset_MAPINFO_3 C:\LAYER_T\RES
-GUI DIRNAME DestDataset_MAPINFO_3 Destination MapInfo Folder:
-DEFAULT_MACRO SourceDataset_MAPINFO C:\LAYER_T\51_01_0000000_Parcel.TAB
+DEFAULT_MACRO SourceDataset_MAPINFO C:\LAYER_T\51_01_0000000.TAB
 GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo TAB File(s):
-INCLUDE [ if {{$(DestDataset_MAPINFO_3)} == {}} { puts_real {Parameter 'DestDataset_MAPINFO_3' must be given a value.}; exit 1; }; ]
+DEFAULT_MACRO FEATURE_TYPES 
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES "C:<backslash>LAYER_T<backslash>51_01_0000000.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,UNENCODED_ATTR_PREFIX,\"fme_ mapinfo_\",_MERGE_SCHEMAS,YES,_MERGE_SCHEMAS,YES" Feature Types to Read:
+DEFAULT_MACRO Out_name 
+GUI OPTIONAL FILENAME_EXISTING Out_name All_Files(*)|*.TAB Out_name:
+DEFAULT_MACRO DestDataset_MAPINFO C:\LAYER_T\RES
+GUI DIRNAME DestDataset_MAPINFO Destination MapInfo Folder:
 INCLUDE [ if {{$(SourceDataset_MAPINFO)} == {}} { puts_real {Parameter 'SourceDataset_MAPINFO' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_MAPINFO)} == {}} { puts_real {Parameter 'DestDataset_MAPINFO' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} MAPINFO
 MULTI_READER_KEYWORD{0} MAPINFO_1
-MULTI_READER_GEN_DIRECTIVES{0} _MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MAXY,0,MAPINFO_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MAXX,0,UNENCODED_ATTR_PREFIX,fme_<space>mapinfo_,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,FME_TABLE_PASSWORD,,ENCODED_ATTRS,mapinfo_text_string,EXPOSE_ATTRS_GROUP,
+MULTI_READER_GEN_DIRECTIVES{0} SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MINY,0,CLIP_TO_ENVELOPE,NO,MAPINFO_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MAXY,0,EXPOSE_ATTRS_GROUP,,DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,UNENCODED_ATTR_PREFIX,fme_<space>mapinfo_,SEARCH_ENVELOPE_MINX,0,FME_TABLE_PASSWORD,,_MERGE_SCHEMAS,YES
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
@@ -851,6 +872,7 @@ MULTI_WRITER_KEYWORD{0} MAPINFO_2
 MACRO WB_KEYWORD "MAPINFO_1"
 #! END_WB_HEADER
 #! START_SOURCE_HEADER MAPINFO MAPINFO_1
+MAPINFO_1_DYNAMIC_WORKFLOW YES
 # ============================================================================
 # The following GUI line prompts for files to be used as the source data
 # The dataset this mapping file was generated from was:
@@ -1001,7 +1023,7 @@ INCLUDE [ if {"$(DestDataset)" != ""} {                          \
  } ]
 #! END_WB_HEADER
 #! START_DEST_HEADER MAPINFO MAPINFO_2
-DEFAULT_MACRO DestDataset_MAPINFO_2 $(DestDataset_MAPINFO_3)
+DEFAULT_MACRO DestDataset_MAPINFO_2 $(DestDataset_MAPINFO)
 GUI DIRNAME DestDataset_MAPINFO_2 Destination MapInfo Folder:
 # ============================================================================ 
 MAPINFO_2_GENERATE_FME_BUILD_NUM 19801
@@ -1026,10 +1048,11 @@ DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_1 MAPINFO_1
 DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_2 MAPINFO_2
 # -------------------------------------------------------------------------
 
-MAPINFO_1_READER_META_ATTRIBUTES fme_feature_type
+MAPINFO_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
 
 # -------------------------------------------------------------------------
 
+MAPINFO_1_FEATURE_TYPES $(FEATURE_TYPES)
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
@@ -1041,22 +1064,22 @@ MAPINFO_1_DEF 51_01_0000000_Parcel   AccNumberZ                   char(181)   Ac
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_MAPINFO_1)   INPUT FEATURE_TYPE *    ROUTE MAPINFO MAPINFO_1::51_01_0000000_Parcel multi_reader_keyword,$(DATASET_KEYWORD_MAPINFO_1) TO FME_GENERIC ::51_01_0000000_Parcel ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-MAPINFO_1_MERGE_DEF MAPINFO_1::51_01_0000000_Parcel EXACT 51_01_0000000_Parcel
+MAPINFO_1_MERGE_DEF MAPINFO_1::51_01_0000000_Parcel GLOB *
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "51_01_0000000_Parcel (MAPINFO_1) Splitter"    INPUT FEATURE_TYPE 51_01_0000000_Parcel    OUTPUT FEATURE_TYPE 51_01_0000000_Parcel_MAPINFO_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 # Wipe out the source setting if it was untouched from the default setting
-DEFAULT_MACRO Перепроецирвание_в_план-схему_метры__SOURCE "Read from feature"
-INCLUDE [if { {Read from feature} == {Read from feature} } {             puts {MACRO Перепроецирвание_в_план-схему_метры__SOURCE}          }         ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME Перепроецирвание_в_план-схему_метры_    INPUT  FEATURE_TYPE 51_01_0000000_Parcel_MAPINFO_1    OUTPUT FEATURE_TYPE Перепроецирвание_в_план-схему_метры__REPROJECTED         @Reproject($(Перепроецирвание_в_план-схему_метры__SOURCE),"*XY-MT*",NearestNeighbor,PreserveCells,Перепроецирвание_в_план-схему_метры_,"COORD_SYS_WARNING",RASTER_TOLERANCE,0.0)
+DEFAULT_MACRO Reprojector_SOURCE "Read from feature"
+INCLUDE [if { {Read from feature} == {Read from feature} } {             puts {MACRO Reprojector_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector    INPUT  FEATURE_TYPE 51_01_0000000_Parcel_MAPINFO_1    OUTPUT FEATURE_TYPE Reprojector_REPROJECTED         @Reproject($(Reprojector_SOURCE),"*XY-MT*",NearestNeighbor,PreserveCells,Reprojector,"COORD_SYS_WARNING",RASTER_TOLERANCE,0.0)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Перепроецирвание_в_план-схему_метры__REPROJECTED TO MAPINFO __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>51_01_0000000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>$(SourceDataset_MAPINFO$encode$encode)<comma>51_01_0000000<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Reprojector_REPROJECTED TO MAPINFO __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>51_01_0000000_Parcel<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>51_01_0000000_Parcel<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-MAPINFO_2_DEF 51_01_0000000   AccNumberZ                   char(181)   AccountNum                   char(181)   Area                         char(181)   CadCost                      char(181)   Category                     char(181)   Coord_Name                   char(181)   Utilizatio                   char(181)   ByDoc                        char(181)   Block_KN                     char(181)   Parcel_KN                    char(181)   Parcel_St                    char(181)   SnglUseKN                    char(181)   Sub_Num                      char(181)   BoundName                    char(181)   GeomType                     char(181)   XmlFile                      char(181)
+MAPINFO_2_DEF 51_01_0000000_Parcel   AccNumberZ                   char(181)   AccountNum                   char(181)   Area                         char(181)   CadCost                      char(181)   Category                     char(181)   Coord_Name                   char(181)   Utilizatio                   char(181)   ByDoc                        char(181)   Block_KN                     char(181)   Parcel_KN                    char(181)   Parcel_St                    char(181)   SnglUseKN                    char(181)   Sub_Num                      char(181)   BoundName                    char(181)   GeomType                     char(181)   XmlFile                      char(181)
