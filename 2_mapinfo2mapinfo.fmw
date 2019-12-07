@@ -14,14 +14,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="2129.49 131"
+#!   DOC_EXTENTS="2072.49 131"
 #!   DOC_TOP_LEFT="20 -347.5"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="19801"
-#!   FME_DOCUMENT_GUID="0c93e8d6-86b9-4d14-b98a-f6ce0db841e2"
-#!   FME_DOCUMENT_PRIORGUID="3b0251f5-1d82-4d66-8dbd-19d6e0307acd,856fc0fa-f2e4-49b0-9f2a-c6c4f590d43e,1af56341-23a7-4384-a978-812cbea86f20"
+#!   FME_DOCUMENT_GUID="fe57d51c-852c-4487-aecc-4cb8eac670bd"
+#!   FME_DOCUMENT_PRIORGUID="3b0251f5-1d82-4d66-8dbd-19d6e0307acd,856fc0fa-f2e4-49b0-9f2a-c6c4f590d43e,1af56341-23a7-4384-a978-812cbea86f20,0c93e8d6-86b9-4d14-b98a-f6ce0db841e2"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -30,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2019.2.0.0 (20191105 - Build 19801 - WIN64)"
-#!   LAST_SAVE_DATE="2019-12-05T22:53:59"
+#!   LAST_SAVE_DATE="2019-12-07T16:14:58"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -49,7 +49,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-745.007 217.502"
+#!   VIEW_POSITION="-415.004 0"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -68,7 +68,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_secondary_axis float mapinfo_text_line_pen_width integer mapinfo_text_fontstyle smallint mapinfo_start_angle float mapinfo_text_fontstyle_shadow char(10) mapinfo_symbol_file_name char(255) mapinfo_primary_axis float mapinfo_rounding float mapinfo_text_width float mapinfo_brush_foreground integer mapinfo_text_fontbgcolor integer fme_text_string char(50) mapinfo_rotation float mapinfo_text_fontstyle_underline char(10) mapinfo_text_justification char(30) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer mapinfo_brush_pattern smallint mapinfo_pen_width smallint mapinfo_center_ycoord float fme_type char(50) mapinfo_text_line_pen_pattern integer fme_basename char(50) mapinfo_text_fontname char(50) mapinfo_text_linetype integer fme_geometry char(50) mapinfo_center_xcoord float mapinfo_smooth logical fme_text_size float mapinfo_centroid_y float mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontsize float mapinfo_sweep_angle float mapinfo_symbol_shape integer multi_reader_id integer mapinfo_type char(25) mapinfo_pen_color integer multi_reader_full_id integer fme_color char(50) mapinfo_text_fontstyle_blink char(10) mapinfo_brush_transparent logical mapinfo_text_string char(255) fme_feature_type char(50) mapinfo_text_spacing smallint mapinfo_pen_pattern smallint mapinfo_symbol_size integer fme_primary_axis float fme_fill_color char(50) mapinfo_text_fontfgcolor integer mapinfo_rounding_height float fme_sweep_angle float mapinfo_secondary_axis float mapinfo_symbol_font char(50) mapinfo_symbol_style smallint mapinfo_text_line_pen_color integer fme_dataset char(50) multi_reader_keyword char(50) mapinfo_centroid_x float mapinfo_text_fontstyle_bold char(10) mapinfo_symbol_color integer mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_italic char(10) fme_start_angle float mapinfo_text_fontstyle_strikeout char(10) mapinfo_symbol_angle float mapinfo_text_height float mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_line_end_x float fme_rotation float mapinfo_text_line_end_y float mapinfo_text_fontstyle_outline char(10) mapinfo_text_fontstyle_halo char(10) multi_reader_type char(50)"
+#!   EXPOSABLE_ATTRS="multi_reader_type char(50) mapinfo_text_justification char(30) mapinfo_smooth logical mapinfo_text_spacing smallint mapinfo_text_fontsize float fme_fill_color char(50) mapinfo_rotation float mapinfo_text_fontstyle_halo char(10) mapinfo_text_line_end_y float mapinfo_symbol_style smallint fme_dataset char(50) mapinfo_text_fontbgcolor integer mapinfo_text_linetype integer multi_reader_full_id integer mapinfo_symbol_font char(50) mapinfo_pen_width smallint mapinfo_type char(25) fme_color char(50) mapinfo_text_line_pen_color integer mapinfo_symbol_shape integer mapinfo_brush_foreground integer fme_type char(50) mapinfo_symbol_file_name char(255) mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_outline char(10) mapinfo_symbol_angle float mapinfo_secondary_axis float mapinfo_rounding float mapinfo_text_fontstyle_allcaps char(10) mapinfo_symbol_size integer mapinfo_text_fontstyle_expanded char(10) mapinfo_pen_color integer mapinfo_text_fontname char(50) mapinfo_text_string char(255) mapinfo_rounding_height float fme_start_angle float mapinfo_text_fontfgcolor integer mapinfo_text_fontstyle_underline char(10) mapinfo_sweep_angle float fme_text_string char(50) mapinfo_center_ycoord float mapinfo_centroid_y float mapinfo_center_xcoord float mapinfo_text_fontstyle_shadow char(10) multi_reader_id integer fme_primary_axis float fme_feature_type char(50) mapinfo_text_fontstyle_strikeout char(10) mapinfo_primary_axis float fme_secondary_axis float mapinfo_pen_pattern smallint fme_basename char(50) mapinfo_text_line_pen_width integer mapinfo_start_angle float mapinfo_text_fontstyle_italic char(10) mapinfo_brush_transparent logical mapinfo_brush_pattern smallint mapinfo_text_height float fme_text_size float mapinfo_centroid_x float fme_sweep_angle float mapinfo_text_line_end_x float mapinfo_symbol_color integer mapinfo_text_fontstyle_blink char(10) mapinfo_text_width float fme_geometry char(50) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer multi_reader_keyword char(50) mapinfo_text_line_pen_pattern integer mapinfo_text_fontstyle smallint fme_rotation float mapinfo_text_fontstyle_bold char(10)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -122,7 +122,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_secondary_axis float mapinfo_text_line_pen_width integer mapinfo_text_fontstyle smallint mapinfo_start_angle float mapinfo_text_fontstyle_shadow char(10) mapinfo_symbol_file_name char(255) mapinfo_primary_axis float mapinfo_rounding float mapinfo_text_width float mapinfo_brush_foreground integer mapinfo_text_fontbgcolor integer fme_text_string char(50) mapinfo_rotation float mapinfo_text_fontstyle_underline char(10) mapinfo_text_justification char(30) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer mapinfo_brush_pattern smallint mapinfo_pen_width smallint mapinfo_center_ycoord float fme_type char(50) mapinfo_text_line_pen_pattern integer fme_basename char(50) mapinfo_text_fontname char(50) mapinfo_text_linetype integer fme_geometry char(50) mapinfo_center_xcoord float mapinfo_smooth logical fme_text_size float mapinfo_centroid_y float mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontsize float mapinfo_sweep_angle float mapinfo_symbol_shape integer mapinfo_type char(25) mapinfo_pen_color integer fme_color char(50) mapinfo_text_fontstyle_blink char(10) mapinfo_brush_transparent logical mapinfo_text_string char(255) fme_feature_type char(50) mapinfo_text_spacing smallint mapinfo_pen_pattern smallint mapinfo_symbol_size integer fme_primary_axis float fme_fill_color char(50) mapinfo_text_fontfgcolor integer mapinfo_rounding_height float fme_sweep_angle float mapinfo_secondary_axis float mapinfo_symbol_font char(50) mapinfo_symbol_style smallint mapinfo_text_line_pen_color integer fme_dataset char(50) mapinfo_centroid_x float mapinfo_text_fontstyle_bold char(10) mapinfo_symbol_color integer mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_italic char(10) fme_start_angle float mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_height float mapinfo_symbol_angle float mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_line_end_x float fme_rotation float mapinfo_text_line_end_y float mapinfo_text_fontstyle_outline char(10) mapinfo_text_fontstyle_halo char(10)"
+#!   EXPOSABLE_ATTRS="mapinfo_text_justification char(30) mapinfo_smooth logical mapinfo_text_spacing smallint mapinfo_text_fontsize float fme_fill_color char(50) mapinfo_rotation float mapinfo_text_fontstyle_halo char(10) mapinfo_text_line_end_y float mapinfo_symbol_style smallint fme_dataset char(50) mapinfo_text_fontbgcolor integer mapinfo_text_linetype integer mapinfo_symbol_font char(50) mapinfo_pen_width smallint mapinfo_type char(25) fme_color char(50) mapinfo_text_line_pen_color integer mapinfo_symbol_shape integer mapinfo_brush_foreground integer fme_type char(50) mapinfo_symbol_file_name char(255) mapinfo_text_fontstyle_opaque char(10) mapinfo_text_fontstyle_outline char(10) mapinfo_symbol_angle float mapinfo_secondary_axis float mapinfo_rounding float mapinfo_text_fontstyle_allcaps char(10) mapinfo_symbol_size integer mapinfo_text_fontstyle_expanded char(10) mapinfo_pen_color integer mapinfo_text_fontname char(50) mapinfo_text_string char(255) mapinfo_rounding_height float fme_start_angle float mapinfo_text_fontfgcolor integer mapinfo_text_fontstyle_underline char(10) mapinfo_sweep_angle float fme_text_string char(50) mapinfo_center_ycoord float mapinfo_centroid_y float mapinfo_center_xcoord float mapinfo_text_fontstyle_shadow char(10) fme_primary_axis float fme_feature_type char(50) mapinfo_text_fontstyle_strikeout char(10) mapinfo_primary_axis float fme_secondary_axis float mapinfo_pen_pattern smallint fme_basename char(50) mapinfo_text_line_pen_width integer mapinfo_start_angle float mapinfo_text_fontstyle_italic char(10) mapinfo_brush_transparent logical mapinfo_brush_pattern smallint mapinfo_text_height float fme_text_size float mapinfo_centroid_x float mapinfo_text_line_end_x float fme_sweep_angle float mapinfo_symbol_color integer mapinfo_text_fontstyle_blink char(10) mapinfo_text_width float fme_geometry char(50) mapinfo_text_fontstyle_inverse char(10) mapinfo_brush_background integer mapinfo_text_line_pen_pattern integer mapinfo_text_fontstyle smallint fme_rotation float mapinfo_text_fontstyle_bold char(10)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[]= %~!@$&amp;#()^&apos;+-.,`;"
@@ -688,14 +688,14 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="51_01_0000000_Parcel"
-#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   NODE_NAME="fme_feature_type_1"
+#!   FEATURE_TYPE_NAME="@Value(fme_basename)"
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="5"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="1557.4845748457492 -276.5"
-#!   BOUNDING_RECT="1557.4845748457492 -276.5 592.00106825772946 71"
+#!   BOUNDING_RECT="1557.4845748457492 -276.5 535.00106825772946 71"
 #!   ORDER="500000000000004"
 #!   COLLAPSED="true"
 #!   KEYWORD="MAPINFO_2"
@@ -721,6 +721,7 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="XmlFile" ATTR_TYPE="char(181)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_dataset" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -1048,7 +1049,7 @@ DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_1 MAPINFO_1
 DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_2 MAPINFO_2
 # -------------------------------------------------------------------------
 
-MAPINFO_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+MAPINFO_1_READER_META_ATTRIBUTES fme_feature_type fme_basename
 
 # -------------------------------------------------------------------------
 
@@ -1076,10 +1077,10 @@ INCLUDE [if { {Read from feature} == {Read from feature} } {             puts {M
 FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector    INPUT  FEATURE_TYPE 51_01_0000000_Parcel_MAPINFO_1    OUTPUT FEATURE_TYPE Reprojector_REPROJECTED         @Reproject($(Reprojector_SOURCE),"*XY-MT*",NearestNeighbor,PreserveCells,Reprojector,"COORD_SYS_WARNING",RASTER_TOLERANCE,0.0)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Reprojector_REPROJECTED TO MAPINFO __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>51_01_0000000_Parcel<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>51_01_0000000_Parcel<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Reprojector_REPROJECTED TO MAPINFO __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>fme_feature_type_1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_basename<lt>closeparen<gt><comma>fme_feature_type_1<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-MAPINFO_2_DEF 51_01_0000000_Parcel   AccNumberZ                   char(181)   AccountNum                   char(181)   Area                         char(181)   CadCost                      char(181)   Category                     char(181)   Coord_Name                   char(181)   Utilizatio                   char(181)   ByDoc                        char(181)   Block_KN                     char(181)   Parcel_KN                    char(181)   Parcel_St                    char(181)   SnglUseKN                    char(181)   Sub_Num                      char(181)   BoundName                    char(181)   GeomType                     char(181)   XmlFile                      char(181)
+MAPINFO_2_DEF fme_feature_type_1   AccNumberZ                   char(181)   AccountNum                   char(181)   Area                         char(181)   CadCost                      char(181)   Category                     char(181)   Coord_Name                   char(181)   Utilizatio                   char(181)   ByDoc                        char(181)   Block_KN                     char(181)   Parcel_KN                    char(181)   Parcel_St                    char(181)   SnglUseKN                    char(181)   Sub_Num                      char(181)   BoundName                    char(181)   GeomType                     char(181)   XmlFile                      char(181)
