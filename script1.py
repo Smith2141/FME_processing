@@ -2,9 +2,10 @@ import os
 import fmeobjects
 
 # Full path to Workspace, example comes from the FME 2014 Training Full Dataset
-workspace = r"C:\Users\1\FME_processing\2_mapinfo2mapinfo.fmw"
-source_dir = input('Укажите папку с файлами: ')
-# source_dir = r"C:\LAYER_T"
+# workspace = r"C:\Users\1\FME_processing\2_mapinfo2mapinfo.fmw"
+workspace = os.path.join(os.getcwd(), '2_mapinfo2mapinfo.fmw')
+# source_dir = input('Укажите папку с файлами: ')
+source_dir = r"C:\LAYER_T"
 target_dir = r"C:\LAYER_T_RES"
 list_processing_files = []
 # Set workspace parameter s by creating a dictionary of name value pairs
