@@ -5,8 +5,8 @@
 #              --SourceDataset_MIF "C:\LAYER_T_RES\Lake_27_3.MIF"
 #              --FEATURE_TYPES ""
 #              --DestDataset_ESRISHAPE "C:\fme_test_mif_to_shp\Output"
-#              --SourceDataset_MAPINFO "C:\LAYER_T_RES\imp_Lake_27_3.TAB"
-#              --FEATURE_TYPES_2 "imp_Lake_27_3"
+#              --SourceDataset_MAPINFO "C:\fme_test_mif_to_shp\Pointstab.TAB"
+#              --FEATURE_TYPES_2 "Pointstab"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -15,8 +15,8 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="6003.99 2276.46"
-#!   DOC_TOP_LEFT="-1037.51 -1537.44"
+#!   DOC_EXTENTS="6010.36 2059.61"
+#!   DOC_TOP_LEFT="-1037.51 -1170.71"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
@@ -31,7 +31,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2019.2.0.0 (20191105 - Build 19801 - WIN64)"
-#!   LAST_SAVE_DATE="2019-12-08T18:44:24"
+#!   LAST_SAVE_DATE="2019-12-09T22:42:11"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,10 +50,10 @@
 #!   TITLE="PolygonBuilder"
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-203.573 560.72"
+#!   VIEW_POSITION="-2683.36 36.1115"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="70"
+#!   ZOOM_SCALE="90"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -1000,42 +1000,6 @@
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="parcel_K24"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="2"
-#!   FEAT_GEOMTYPE="mif_text mif_ellipse mif_arc mif_point mif_polyline mif_rectangle mif_rounded_rectangle mif_region mif_custom_point mif_font_point mif_none mif_collection"
-#!   POSITION="-27.221707151785665 -211.21514286571431"
-#!   BOUNDING_RECT="-27.221707151785665 -211.21514286571431 478.13099999999997 71"
-#!   ORDER="500000000000005"
-#!   COLLAPSED="true"
-#!   KEYWORD="MIF_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="false"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER="*"
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="true"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="BLOCK_ID" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="FLAG" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LOT" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LU90" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LUCODE" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PLAT" ATTR_TYPE="char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LU95" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LULU" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="SOURCE" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PERIMETER" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PARCEL_ID" ATTR_TYPE="char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
 #!   IS_SOURCE="false"
 #!   NODE_NAME="Shapefile1"
 #!   FEATURE_TYPE_NAME="@Value(fme_basename)"
@@ -1052,11 +1016,11 @@
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="2"
 #!   DYNAMIC_SCHEMA="true"
-#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1"
+#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1 SCHEMA_FROM_FIRST_FEATURE"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE="FROM_ATTRIBUTE"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_basename)"
-#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#!   DYNAMIC_SCHEMA_DEFINITION="FROM_ATTRIBUTE"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME="@Value(GeomType)"
 #!   DYNAMIC_SCHEMA_GEOMETRY="FIRST_ENCOUNTERED"
 #!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_first_feature"
 #!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
@@ -1091,8 +1055,8 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="17"
 #!   FEAT_GEOMTYPE="shape_polygon"
-#!   POSITION="3364.1783609121812 -397.32279476728718"
-#!   BOUNDING_RECT="3364.1783609121812 -397.32279476728718 700.91200000000003 71"
+#!   POSITION="3364.1783609121812 -400.10060032312055"
+#!   BOUNDING_RECT="3364.1783609121812 -400.10060032312055 700.91200000000003 71"
 #!   ORDER="500000000000002"
 #!   COLLAPSED="true"
 #!   KEYWORD="ESRISHAPE_1"
@@ -1100,58 +1064,11 @@
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="2"
 #!   DYNAMIC_SCHEMA="true"
-#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1"
+#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1 SCHEMA_FROM_FIRST_FEATURE"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE="AUTOMATIC"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_feature_type)"
-#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
-#!   DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_schema_definition"
-#!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="BLOCK_ID" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="FLAG" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LOT" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LU90" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LUCODE" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PLAT" ATTR_TYPE="char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LU95" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LULU" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="SOURCE" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PERIMETER" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="PARCEL_ID" ATTR_TYPE="char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brush_" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brus00" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brus01" ATTR_TYPE="short" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_geometry" ATTR_TYPE="fme_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
-#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="Shapefile10000"
-#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="true"
-#!   IDENTIFIER="19"
-#!   FEAT_GEOMTYPE="shape_polygon"
-#!   POSITION="3364.1783609121812 -175.44771975653708"
-#!   BOUNDING_RECT="3364.1783609121812 -175.44771975653708 700.91200000000003 71"
-#!   ORDER="500000000000002"
-#!   COLLAPSED="true"
-#!   KEYWORD="ESRISHAPE_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="2"
-#!   DYNAMIC_SCHEMA="true"
-#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1"
-#!   DYNAMIC_SCHEMA_FEATURE_TYPE="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_feature_type)"
-#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#!   DYNAMIC_SCHEMA_DEFINITION="FROM_ATTRIBUTE"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME="@Value(fme_feature_type)"
 #!   DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
 #!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_schema_definition"
 #!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
@@ -1194,11 +1111,11 @@
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="2"
 #!   DYNAMIC_SCHEMA="true"
-#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1"
+#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1 SCHEMA_FROM_FIRST_FEATURE"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE="AUTOMATIC"
 #!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_feature_type)"
-#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
-#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#!   DYNAMIC_SCHEMA_DEFINITION="FROM_ATTRIBUTE"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME="@Value(GeomType)"
 #!   DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
 #!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_schema_definition"
 #!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
@@ -1245,8 +1162,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="33"
 #!   FEAT_GEOMTYPE="mapinfo_text mapinfo_ellipse mapinfo_arc mapinfo_point mapinfo_polyline mapinfo_rectangle mapinfo_rounded_rectangle mapinfo_region mapinfo_custom_point mapinfo_font_point mapinfo_none mapinfo_collection"
-#!   POSITION="-3.0907071517856934 -491.07403931182171"
-#!   BOUNDING_RECT="-3.0907071517856934 -491.07403931182171 454 71"
+#!   POSITION="-24.519492868214286 -204.56323769586902"
+#!   BOUNDING_RECT="-24.519492868214286 -204.56323769586902 454 71"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
 #!   KEYWORD="MAPINFO_1"
@@ -1308,18 +1225,65 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="mapinfo_text_spacing" ATTR_TYPE="smallint"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="mapinfo_text_width" ATTR_TYPE="float"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Shapefile10000"
+#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="26"
+#!   FEAT_GEOMTYPE="shape_polygon"
+#!   POSITION="3370.5528359119312 -204.58297213343968"
+#!   BOUNDING_RECT="3370.5528359119312 -204.58297213343968 700.91200000000003 71"
+#!   ORDER="500000000000002"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="2"
+#!   DYNAMIC_SCHEMA="true"
+#!   DYNAMIC_SCHEMA_SOURCES="MAPINFO_1 SCHEMA_FROM_FIRST_FEATURE"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   DYNAMIC_SCHEMA_DEFINITION="FROM_ATTRIBUTE"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME="@Value(GeomType)"
+#!   DYNAMIC_SCHEMA_GEOMETRY="FIRST_ENCOUNTERED"
+#!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_first_feature"
+#!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BLOCK_ID" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FLAG" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LOT" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LU90" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LUCODE" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PLAT" ATTR_TYPE="char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LU95" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LULU" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SOURCE" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PERIMETER" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PARCEL_ID" ATTR_TYPE="char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brush_" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brus00" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mif_brus01" ATTR_TYPE="short" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_geometry" ATTR_TYPE="fme_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! <READER_DATASETS>
 #! <DATASET 
-#!   NAME="MAPINFO_1"
-#!   OVERRIDE="-MAPINFO_1_DATASET"
-#!   DATASET="MAPINFO_1/imp_Lake_27_3.TAB"
-#! />
-#! <DATASET 
 #!   NAME="MIF_1"
 #!   OVERRIDE="-MIF_1_DATASET"
 #!   DATASET="MIF_1/Lake_27_3.MIF"
+#! />
+#! <DATASET 
+#!   NAME="MAPINFO_1"
+#!   OVERRIDE="-MAPINFO_1_DATASET"
+#!   DATASET="MAPINFO_1/Pointstab.TAB"
 #! />
 #! </READER_DATASETS>
 #! <WRITER_DATASETS>
@@ -1337,7 +1301,7 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES C:&lt;backslash&gt;LAYER_T_RES&lt;backslash&gt;Lake_27_3.MIF,_FORMAT_OVERRIDE_,MIF,_DATASET_OVERRIDE_,SourceDataset_MIF,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,USE_SEARCH_ENVELOPE,NO,_MERGE_SCHEMAS,YES,_MERGE_SCHEMAS,YES Feature Types to Read:"
+#!   GUI_LINE="GUI OPTIONAL LISTBOX_ENCODED FEATURE_TYPES &quot; &quot; Feature Types to Read:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
@@ -1348,31 +1312,16 @@
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo TAB File(s):"
-#!   DEFAULT_VALUE="C:\LAYER_T_RES\imp_Lake_27_3.TAB"
+#!   DEFAULT_VALUE="C:\fme_test_mif_to_shp\Pointstab.TAB"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES_2 &quot;C:&lt;backslash&gt;LAYER_T_RES&lt;backslash&gt;imp_Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,UNENCODED_ATTR_PREFIX,\&quot;fme_ mapinfo_\&quot;,DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
-#!   DEFAULT_VALUE="imp_Lake_27_3"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES_2 &quot;C:&lt;backslash&gt;fme_test_mif_to_shp&lt;backslash&gt;Pointstab.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,FME_GROUP_NAMED1,FME_DISCLOSURE_OPEN,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,UNENCODED_ATTR_PREFIX,\&quot;fme_ mapinfo_\&quot;,DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
+#!   DEFAULT_VALUE="Pointstab"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
-#! <COMMENT
-#!   IDENTIFIER="12"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When adding the MapInfo MIF/MID Reader, under Workflow Option set it to &lt;span style=&quot; font-weight:600;&quot;&gt;Single Merged Feature Type&lt;/span&gt;s to ensure all of the files within the folder are being read in. &lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In the parameters, under the Format Attributes tab, enable &lt;span style=&quot; font-weight:600;&quot;&gt;fme_basename&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-984.42160715178579 -102.71514286571437"
-#!   TOP_LEFT="-984.42160715178579 -102.71514286571437"
-#!   BOTTOM_RIGHT="-145.53760715178578 -332.71714286571438"
-#!   BOUNDING_RECT="-984.42160715178579 -102.71514286571437 838.88400000000001 230.00200000000001"
-#!   ORDER="500000000000000"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="false"
-#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="2"
-#! />
 #! <COMMENT
 #!   IDENTIFIER="13"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Write out to Shapefile, set the Shapefile name to &lt;span style=&quot; font-weight:600;&quot;&gt;fme_basename&lt;/span&gt; to fanout the data. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
@@ -1406,10 +1355,10 @@
 #! <COMMENT
 #!   IDENTIFIER="18"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Write out to Shapefile, set the Shapefile name to &lt;span style=&quot; font-weight:600;&quot;&gt;fme_basename&lt;/span&gt; to fanout the data. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="4221.4383609121815 -282.94879476728721"
-#!   TOP_LEFT="4221.4383609121815 -282.94879476728721"
-#!   BOTTOM_RIGHT="4966.4753609121817 -469.20079476728722"
-#!   BOUNDING_RECT="4221.4383609121815 -282.94879476728721 745.03700000000003 186.25200000000001"
+#!   POSITION="4221.4383609121815 -285.72660032312058"
+#!   TOP_LEFT="4221.4383609121815 -285.72660032312058"
+#!   BOTTOM_RIGHT="4966.4753609121817 -471.97860032312059"
+#!   BOUNDING_RECT="4221.4383609121815 -285.72660032312058 745.03700000000003 186.25200000000001"
 #!   ORDER="500000000000000"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -1417,21 +1366,6 @@
 #!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="17"
-#! />
-#! <COMMENT
-#!   IDENTIFIER="20"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Write out to Shapefile, set the Shapefile name to &lt;span style=&quot; font-weight:600;&quot;&gt;fme_basename&lt;/span&gt; to fanout the data. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="4221.4383609121815 -61.073719756537116"
-#!   TOP_LEFT="4221.4383609121815 -61.073719756537116"
-#!   BOTTOM_RIGHT="4966.4753609121817 -247.32571975653713"
-#!   BOUNDING_RECT="4221.4383609121815 -61.073719756537116 745.03700000000003 186.25200000000001"
-#!   ORDER="500000000000000"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="false"
-#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="19"
 #! />
 #! <COMMENT
 #!   IDENTIFIER="28"
@@ -1448,6 +1382,21 @@
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="27"
 #! />
+#! <COMMENT
+#!   IDENTIFIER="32"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Write out to Shapefile, set the Shapefile name to &lt;span style=&quot; font-weight:600;&quot;&gt;fme_basename&lt;/span&gt; to fanout the data. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4227.812835911931 -90.208972133439715"
+#!   TOP_LEFT="4227.812835911931 -90.208972133439715"
+#!   BOTTOM_RIGHT="4972.8498359119312 -276.46097213343972"
+#!   BOUNDING_RECT="4227.812835911931 -90.208972133439715 745.03700000000003 186.25200000000001"
+#!   ORDER="500000000000000"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="26"
+#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
@@ -1463,7 +1412,7 @@
 #!   BOUNDING_RECT="-94.221407151785741 -35.784857134285573 596 1019.14"
 #!   STICKY="true"
 #!   COLOUR="0.80000000000000004,0.80000000000000004,0,0.39215686274509803"
-#!   CONTENTS="2 33 "
+#!   CONTENTS="33 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1491,7 +1440,7 @@
 #!   BOUNDING_RECT="3299.0528609121811 -92.571139282821377 873.16300000000001 1078.1400000000001"
 #!   STICKY="true"
 #!   COLOUR="0,0.53333333333333333,0,0.39215686274509803"
-#!   CONTENTS="7 17 19 27 "
+#!   CONTENTS="7 17 27 26 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -1509,20 +1458,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="POINT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1539,6 +1474,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1572,20 +1509,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="LINE"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1602,6 +1525,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1633,22 +1558,8 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <OUTPUT_FEAT NAME="ARC"/>
+#!     <OUTPUT_FEAT NAME="AREA"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1665,6 +1576,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1696,22 +1609,8 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <OUTPUT_FEAT NAME="AREA"/>
+#!     <OUTPUT_FEAT NAME="TEXT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -1728,6 +1627,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -1759,22 +1660,9 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <OUTPUT_FEAT NAME="ELLIPSE"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="POINTCLOUD"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1791,6 +1679,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1822,22 +1712,8 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <OUTPUT_FEAT NAME="TEXT"/>
+#!     <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="5"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="5" />
@@ -1854,6 +1730,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="5" />
@@ -1885,513 +1763,8 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <OUTPUT_FEAT NAME="RASTER"/>
-#!     <FEAT_COLLAPSED COLLAPSED="6"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#!     <OUTPUT_FEAT NAME="POINTCLOUD"/>
-#!     <FEAT_COLLAPSED COLLAPSED="7"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#!     <OUTPUT_FEAT NAME="SURFACE"/>
-#!     <FEAT_COLLAPSED COLLAPSED="8"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#!     <OUTPUT_FEAT NAME="SOLID"/>
-#!     <FEAT_COLLAPSED COLLAPSED="9"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="9" />
-#!     <OUTPUT_FEAT NAME="COLLECTION"/>
-#!     <FEAT_COLLAPSED COLLAPSED="10"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="10" />
-#!     <OUTPUT_FEAT NAME="NULL"/>
-#!     <FEAT_COLLAPSED COLLAPSED="11"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="11" />
-#!     <OUTPUT_FEAT NAME="INSTANCE"/>
-#!     <FEAT_COLLAPSED COLLAPSED="12"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="12" />
-#!     <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="13"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="13" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="13" />
 #!     <XFORM_PARM PARM_NAME="BREAK_AGG" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="GEOM_PORT_NAMES" PARM_VALUE="Point Line Arc Area Ellipse Text Raster &quot;Point Cloud&quot; Surface Solid Collection Null Instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_PORT_NAMES" PARM_VALUE="Point Line Area Text &quot;Point Cloud&quot;"/>
 #!     <XFORM_PARM PARM_NAME="INSTANTIATE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -2401,29 +1774,16 @@
 #!   IDENTIFIER="5"
 #!   TYPE="AreaBuilder"
 #!   VERSION="12"
-#!   POSITION="2157.162137837759 -910.71389285321425"
-#!   BOUNDING_RECT="2157.162137837759 -910.71389285321425 431 71"
+#!   POSITION="2086.5184592581159 -92.571139282821377"
+#!   BOUNDING_RECT="2086.5184592581159 -92.571139282821377 431 71"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
-#!   ENABLED="false"
+#!   ENABLED="true"
 #!   LAST_PARM_EDIT="17652"
 #! >
 #!     <OUTPUT_FEAT NAME="AREA"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2440,6 +1800,7 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2474,19 +1835,6 @@
 #!     <OUTPUT_FEAT NAME="Incomplete"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2503,6 +1851,7 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2536,20 +1885,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -2566,6 +1901,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -2625,29 +1962,15 @@
 #!   IDENTIFIER="25"
 #!   TYPE="LineBuilder"
 #!   VERSION="7"
-#!   POSITION="2145.662137837759 -245.71384285271438"
-#!   BOUNDING_RECT="2145.662137837759 -245.71384285271438 454 71"
+#!   POSITION="2063.5184592581159 398.89577784666722"
+#!   BOUNDING_RECT="2063.5184592581159 398.89577784666722 454 71"
 #!   ORDER="500000000000004"
 #!   PARMS_EDITED="true"
-#!   ENABLED="false"
+#!   ENABLED="true"
 #!   LAST_PARM_EDIT="19801"
 #! >
 #!     <OUTPUT_FEAT NAME="POINT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2664,6 +1987,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2697,20 +2022,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="LINE"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2727,6 +2038,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2760,20 +2073,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="POLYGON"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -2790,6 +2089,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -2823,20 +2124,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -2853,6 +2140,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -2887,43 +2176,29 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_PARM PARM_NAME="ACCUM_INPUT_ATTRS" PARM_VALUE="Use Attributes From One Feature"/>
 #!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="REMOVE_DUPLICATES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_DUPLICATES" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LineBuilder"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="30"
-#!   TYPE="PointCloudCombiner"
-#!   VERSION="6"
-#!   POSITION="2145.662137837759 174.19942408171374"
-#!   BOUNDING_RECT="2145.662137837759 174.19942408171374 454 71"
-#!   ORDER="500000000000006"
+#!   IDENTIFIER="37"
+#!   TYPE="TextAdder"
+#!   VERSION="2"
+#!   POSITION="2086.5184592581159 -659.68913657390567"
+#!   BOUNDING_RECT="2086.5184592581159 -659.68913657390567 454 71"
+#!   ORDER="500000000000011"
 #!   PARMS_EDITED="true"
-#!   ENABLED="false"
+#!   ENABLED="true"
 #!   LAST_PARM_EDIT="19801"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2940,6 +2215,132 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="KEEP_GEOM" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEXT_ROTATION" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_SIZE" PARM_VALUE="@Value(mapinfo_text_fontsize)"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_STRING" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;mapinfo_text_string&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TextAdder"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="38"
+#!   TYPE="PointCloudCombiner"
+#!   VERSION="6"
+#!   POSITION="2086.5184592581159 888.89777786666718"
+#!   BOUNDING_RECT="2086.5184592581159 888.89777786666718 454 71"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19801"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2973,20 +2374,6 @@
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3003,6 +2390,8 @@
 #!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3052,319 +2441,8 @@
 #!     <XFORM_PARM PARM_NAME="VECTOR_PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudCombiner"/>
 #! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="37"
-#!   TYPE="TextAdder"
-#!   VERSION="2"
-#!   POSITION="2145.662137837759 -1466.4432358609304"
-#!   BOUNDING_RECT="2145.662137837759 -1466.4432358609304 454 71"
-#!   ORDER="500000000000011"
-#!   PARMS_EDITED="true"
-#!   ENABLED="false"
-#!   LAST_PARM_EDIT="19801"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="KEEP_GEOM" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TEXT_ROTATION" PARM_VALUE="0"/>
-#!     <XFORM_PARM PARM_NAME="TEXT_SIZE" PARM_VALUE="@Value(mapinfo_text_fontsize)"/>
-#!     <XFORM_PARM PARM_NAME="TEXT_STRING" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;mapinfo_text_string&lt;closeparen&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TextAdder"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="35"
-#!   TYPE="PointCloudCoercer"
-#!   VERSION="3"
-#!   POSITION="2700.0247093206171 739.01975019750193"
-#!   BOUNDING_RECT="2700.0247093206171 739.01975019750193 454 71"
-#!   ORDER="500000000000012"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19801"
-#! >
-#!     <OUTPUT_FEAT NAME="COERCED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_part_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BLOCK_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="FLAG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU90" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LUCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PLAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LU95" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="LULU" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SOURCE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PERIMETER" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PARCEL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="AccNumberZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="AccountNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="CadCost" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Coord_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Utilizatio" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="ByDoc" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Block_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_KN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Parcel_St" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="SnglUseKN" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Sub_Num" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="BoundName" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="GeomType" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="XmlFile" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontfgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontbgcolor" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontname" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontsize" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_allcaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_blink" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_bold" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_expanded" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_halo" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_inverse" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_italic" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_opaque" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_outline" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_shadow" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_strikeout" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_fontstyle_underline" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_height" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_justification" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_x" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_end_y" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_pattern" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_line_pen_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_linetype" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_spacing" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="mapinfo_text_width" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CONVERT_TO_DISPLAY" PARM_VALUE="Individual Points"/>
-#!     <XFORM_PARM PARM_NAME="MULTIPOINT_SIZE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PART_NUMBER_ATTR_NAME" PARM_VALUE="_part_number"/>
-#!     <XFORM_PARM PARM_NAME="POINT_COMPONENTS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POINT_COMPONENTS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POINT_COMPONENTS_PRESERVE_DISPLAY" PARM_VALUE="Attributes"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudCoercer"/>
-#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="16"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="3"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
 #! <FEAT_LINK
 #!   IDENTIFIER="34"
 #!   SOURCE_NODE="33"
@@ -3388,9 +2466,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="32"
-#!   SOURCE_NODE="30"
-#!   TARGET_NODE="19"
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="37"
+#!   TARGET_NODE="27"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -3399,20 +2477,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="40"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="19"
-#!   SOURCE_PORT_DESC="fo 0 COERCED"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="36"
-#!   SOURCE_NODE="37"
-#!   TARGET_NODE="27"
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="38"
+#!   TARGET_NODE="26"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -3432,9 +2499,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="38"
+#!   IDENTIFIER="40"
 #!   SOURCE_NODE="3"
-#!   TARGET_NODE="35"
+#!   TARGET_NODE="38"
 #!   SOURCE_PORT_DESC="fo 0 POINT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -3443,21 +2510,10 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="42"
-#!   SOURCE_NODE="3"
-#!   TARGET_NODE="30"
-#!   SOURCE_PORT_DESC="fo 0 POINT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #!   IDENTIFIER="21"
 #!   SOURCE_NODE="3"
 #!   TARGET_NODE="5"
-#!   SOURCE_PORT_DESC="fo 3 AREA"
+#!   SOURCE_PORT_DESC="fo 2 AREA"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -3479,32 +2535,10 @@
 #!   IDENTIFIER="29"
 #!   SOURCE_NODE="3"
 #!   TARGET_NODE="37"
-#!   SOURCE_PORT_DESC="fo 5 TEXT"
+#!   SOURCE_PORT_DESC="fo 3 TEXT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="26"
-#!   SOURCE_NODE="3"
-#!   TARGET_NODE="30"
-#!   SOURCE_PORT_DESC="fo 7 POINTCLOUD"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="41"
-#!   SOURCE_NODE="3"
-#!   TARGET_NODE="35"
-#!   SOURCE_PORT_DESC="fo 7 POINTCLOUD"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
@@ -3524,13 +2558,13 @@ GUI IGNORE SourceDataset_MIF_1,MIF_IN_ENCODING_MIF_1,MIF_IN_EXPOSE_ATTRS_GROUP_M
 DEFAULT_MACRO SourceDataset_MIF C:\LAYER_T_RES\Lake_27_3.MIF
 GUI MULTIFILE SourceDataset_MIF MIF_Files(*.mif)|*.mif|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo MIF/MID File(s):
 DEFAULT_MACRO FEATURE_TYPES 
-GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES C:<backslash>LAYER_T_RES<backslash>Lake_27_3.MIF,_FORMAT_OVERRIDE_,MIF,_DATASET_OVERRIDE_,SourceDataset_MIF,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,USE_SEARCH_ENVELOPE,NO,_MERGE_SCHEMAS,YES,_MERGE_SCHEMAS,YES Feature Types to Read:
+GUI OPTIONAL LISTBOX_ENCODED FEATURE_TYPES " " Feature Types to Read:
 DEFAULT_MACRO DestDataset_ESRISHAPE C:\fme_test_mif_to_shp\Output
 GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:
-DEFAULT_MACRO SourceDataset_MAPINFO C:\LAYER_T_RES\imp_Lake_27_3.TAB
+DEFAULT_MACRO SourceDataset_MAPINFO C:\fme_test_mif_to_shp\Pointstab.TAB
 GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source MapInfo TAB File(s):
-DEFAULT_MACRO FEATURE_TYPES_2 imp_Lake_27_3
-GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES_2 "C:<backslash>LAYER_T_RES<backslash>imp_Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,UNENCODED_ATTR_PREFIX,\"fme_ mapinfo_\",DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,_MERGE_SCHEMAS,YES" Feature Types to Read:
+DEFAULT_MACRO FEATURE_TYPES_2 Pointstab
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES_2 "C:<backslash>fme_test_mif_to_shp<backslash>Pointstab.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,FME_GROUP_NAMED1,FME_DISCLOSURE_OPEN,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,UNENCODED_ATTR_PREFIX,\"fme_ mapinfo_\",DYNAMIC_WORKFLOW,yes,ENCODED_ATTRS,mapinfo_text_string,_MERGE_SCHEMAS,YES" Feature Types to Read:
 INCLUDE [ if {{$(SourceDataset_MIF)} == {}} { puts_real {Parameter 'SourceDataset_MIF' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'DestDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SourceDataset_MAPINFO)} == {}} { puts_real {Parameter 'SourceDataset_MAPINFO' must be given a value.}; exit 1; }; ]
@@ -3661,7 +2695,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
 #! START_SOURCE_HEADER MAPINFO MAPINFO_1
 DEFAULT_MACRO SourceDataset_MAPINFO_1 $(SourceDataset_MAPINFO)
 GUI MULTIFILE SourceDataset_MAPINFO_1 TAB_Files(*.tab)|*.tab|All_Files(*)|* Source MapInfo TAB File(s):
-DEFAULT_MACRO MAPINFO_IN_FME_GROUP_NAMED1_MAPINFO_1 
+DEFAULT_MACRO MAPINFO_IN_FME_GROUP_NAMED1_MAPINFO_1 FME_DISCLOSURE_OPEN
 GUI OPTIONAL DISCLOSUREGROUP MAPINFO_IN_FME_GROUP_NAMED1_MAPINFO_1 MAPINFO_IN_FME_TABLE_PASSWORD_MAPINFO_1 FME Table
 DEFAULT_MACRO MAPINFO_IN_FME_TABLE_PASSWORD_MAPINFO_1 
 MAPINFO_1_FME_TABLE_PASSWORD "$(MAPINFO_IN_FME_TABLE_PASSWORD_MAPINFO_1)"
@@ -3821,7 +2855,7 @@ DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_1 MAPINFO_1
 DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_1 ESRISHAPE_1
 # -------------------------------------------------------------------------
 
-MIF_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+MIF_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -3842,11 +2876,7 @@ MAPINFO_1_DEF imp_Lake_27_3   AccNumberZ                   char(181)   AccountNu
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE MAPINFO MAPINFO_1::imp_Lake_27_3 multi_reader_keyword,$(DATASET_KEYWORD_MAPINFO_1) TO FME_GENERIC ::imp_Lake_27_3 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-MIF_1_MERGE_DEF MIF_1::parcel_K24 GLOB *
 MAPINFO_1_MERGE_DEF MAPINFO_1::imp_Lake_27_3 GLOB_NOCASE *
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "parcel_K24 (MIF_1) Splitter"    INPUT FEATURE_TYPE parcel_K24    OUTPUT FEATURE_TYPE parcel_K24_MIF_1
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "imp_Lake_27_3 (MAPINFO_1) Splitter"    INPUT FEATURE_TYPE imp_Lake_27_3    OUTPUT FEATURE_TYPE imp_Lake_27_3_MAPINFO_1
@@ -3856,79 +2886,65 @@ MACRO OUTPUT_POINT_FTYPE not_selected
 MACRO OUTPUT_POINT_FTYPE GeometryFilter_POINT
 MACRO OUTPUT_LINE_FTYPE not_selected
 MACRO OUTPUT_LINE_FTYPE GeometryFilter_LINE
-MACRO OUTPUT_ARC_FTYPE not_selected
-MACRO OUTPUT_ARC_FTYPE GeometryFilter_ARC
 MACRO OUTPUT_AREA_FTYPE not_selected
 MACRO OUTPUT_AREA_FTYPE GeometryFilter_AREA
-MACRO OUTPUT_ELLIPSE_FTYPE not_selected
-MACRO OUTPUT_ELLIPSE_FTYPE GeometryFilter_ELLIPSE
 MACRO OUTPUT_TEXT_FTYPE not_selected
 MACRO OUTPUT_TEXT_FTYPE GeometryFilter_TEXT
-MACRO OUTPUT_RASTER_FTYPE not_selected
-MACRO OUTPUT_RASTER_FTYPE GeometryFilter_RASTER
 MACRO OUTPUT_POINTCLOUD_FTYPE not_selected
 MACRO OUTPUT_POINTCLOUD_FTYPE GeometryFilter_POINTCLOUD
-MACRO OUTPUT_SURFACE_FTYPE not_selected
-MACRO OUTPUT_SURFACE_FTYPE GeometryFilter_SURFACE
-MACRO OUTPUT_SOLID_FTYPE not_selected
-MACRO OUTPUT_SOLID_FTYPE GeometryFilter_SOLID
-MACRO OUTPUT_COLLECTION_FTYPE not_selected
-MACRO OUTPUT_COLLECTION_FTYPE GeometryFilter_COLLECTION
-MACRO OUTPUT_NULL_FTYPE not_selected
-MACRO OUTPUT_NULL_FTYPE GeometryFilter_NULL
-Lookup GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_arc $(OUTPUT_ARC_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_ellipse $(OUTPUT_ELLIPSE_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_raster $(OUTPUT_RASTER_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)   fme_surface $(OUTPUT_SURFACE_FTYPE)   fme_solid $(OUTPUT_SOLID_FTYPE)   fme_collection $(OUTPUT_COLLECTION_FTYPE)   fme_no_geom $(OUTPUT_NULL_FTYPE)
+MACRO OUTPUT_INSTANCE_FTYPE not_selected
+Lookup GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
-INCLUDE [    if 1 {       puts "MACRO COLLECTION_HANDLING *";       if 1 {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{GeometryFilter_INSTANCE} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE parcel_K24_MIF_1    INPUT  FEATURE_TYPE imp_Lake_27_3_MAPINFO_1    OUTPUT FEATURE_TYPE GeometryFilter___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
-FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE GeometryFilter_INSTANCE    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Input___
+INCLUDE [    if 1 {       puts "MACRO COLLECTION_HANDLING *";       if 1 {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{$(OUTPUT_INSTANCE_FTYPE)} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE imp_Lake_27_3_MAPINFO_1    OUTPUT FEATURE_TYPE GeometryFilter___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
+FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Input___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_CollectionTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_Deagg    INPUT FEATURE_TYPE GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW Yes    OUTPUT POINT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780944_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
-FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780944_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780944_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780944_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780944_targetFeatureType)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter POINT Splitter"   INPUT FEATURE_TYPE GeometryFilter_POINT   OUTPUT FEATURE_TYPE GeometryFilter_POINT_0_QhKLo7xp6ec=   OUTPUT FEATURE_TYPE GeometryFilter_POINT_1_9oK7ioxof/8=
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter ARC Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_ARC
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter ELLIPSE Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_ELLIPSE
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter RASTER Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_RASTER
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter POINTCLOUD Splitter"   INPUT FEATURE_TYPE GeometryFilter_POINTCLOUD   OUTPUT FEATURE_TYPE GeometryFilter_POINTCLOUD_0_BO1Pq/jpCzk=   OUTPUT FEATURE_TYPE GeometryFilter_POINTCLOUD_1_AEKRePVfrWg=
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter SURFACE Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_SURFACE
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter SOLID Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_SOLID
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter COLLECTION Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_COLLECTION
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter NULL Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_NULL
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter INSTANCE Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_INSTANCE
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780958_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780958_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780958_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780958_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_d517531f_0591_40f5_b2a6_96fd17bd780958_targetFeatureType)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter POINTCLOUD Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_POINTCLOUD
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter <UNFILTERED> Transformer Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_<UNFILTERED>
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "TextAdder (Disabled) Nuker"   INPUT FEATURE_TYPE GeometryFilter_TEXT
+FACTORY_DEF * TeeFactory    FACTORY_NAME TextAdder_TextAdder    INPUT  FEATURE_TYPE GeometryFilter_TEXT    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)         @Geometry(REJECTABLE, ADD_TEXT,"@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>mapinfo_text_string<closeparen>,TextAdder)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>mapinfo_text_fontsize<closeparen>,TextAdder)","0","Yes")
+FACTORY_DEF * TestFactory    FACTORY_NAME TextAdder_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT PASSED FEATURE_TYPE TextAdder_<REJECTED>       @RemoveAttributes(___fme_rejection_code___)    OUTPUT FAILED FEATURE_TYPE TextAdder_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME TextAdder_<Rejected> INPUT FEATURE_TYPE TextAdder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, TextAdder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AreaBuilder (Disabled) Nuker"   INPUT FEATURE_TYPE GeometryFilter_AREA
+FACTORY_DEF * TestFactory    FACTORY_NAME AreaBuilder_GeomFilter_1    INPUT  FEATURE_TYPE GeometryFilter_AREA    INPUT FEATURE_TYPE AreaBuilder_GeomFilter_DUMMY    TEST &fme_type == "fme_arc"    TEST &fme_type == "fme_ellipse"    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE AreaBuilder___ValidGeoms_1___    OUTPUT FAILED FEATURE_TYPE AreaBuilder___InvalidGeoms_1___
+FACTORY_DEF * TestFactory    FACTORY_NAME AreaBuilder_GeomFilter_2    INPUT FEATURE_TYPE AreaBuilder___ValidGeoms_1___    TEST @GlobalVariable(fme_get_mapping_file_flag_keyword_FME_USE_RICH_GEOMETRY) == yes    BOOLEAN_OPERATOR AND    OUTPUT PASSED FEATURE_TYPE AreaBuilder___ValidGeoms___    OUTPUT FAILED FEATURE_TYPE AreaBuilder___InvalidGeoms_1___
+FACTORY_DEF * TestFactory    FACTORY_NAME AreaBuilder_GeomFilter_3    INPUT FEATURE_TYPE AreaBuilder___InvalidGeoms_1___    TEST @Tcl2("FME_Coordinates numCoords") >= 2    BOOLEAN_OPERATOR AND    OUTPUT PASSED FEATURE_TYPE AreaBuilder___ValidGeoms___    OUTPUT FAILED FEATURE_TYPE AreaBuilder___InvalidGeoms___
+INCLUDE [if { ("NONE" == "NONE") || ("<Unused>" == "0") } {              puts "MACRO AreaBuilder_IS_ENABLE NOT_THIS_TIME";          } else {              puts "MACRO AreaBuilder_IS_ENABLE *";          }          ]
+# We skip this step if tolerance is 0
+FACTORY_DEF $(AreaBuilder_IS_ENABLE) SnappingFactory    FACTORY_NAME AreaBuilder_SNAPPER    INPUT FEATURE_TYPE AreaBuilder___ValidGeoms___    SNAP_TYPE NONE    SNAP_TOLERANCE <Unused>    EXTEND_LINES_TO_SNAP NEVER    SAVE_SHORT_LINES No    OUTPUT SNAPPED FEATURE_TYPE AreaBuilder___ValidGeoms___    OUTPUT UNTOUCHED FEATURE_TYPE AreaBuilder___ValidGeoms___
+FACTORY_DEF {*} PolygonFactory    FACTORY_NAME AreaBuilder_polygonizer    GROUP_BY fme_basename    INPUT FEATURE_TYPE AreaBuilder___ValidGeoms___    CONSIDER_NODE_ELEVATION NO    CONNECT_Z_MODE FIRST_WINS    END_NODED    REPORT_PROGRESS    LIST_ATTRS_TO_INCLUDE  { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    LINES_AS_SEGMENTS No    ALLOW_CYCLES No    REJECT_INVALID_GEOM Yes    ACCUMMULATE_ATTRIBUTES One    OUTPUT POLYGON FEATURE_TYPE ___POLY___    OUTPUT REJECTED FEATURE_TYPE AreaBuilder_<REJECTED>
+INCLUDE [ if { ("YES" == "Yes") || ("YES" == "yes") || ("YES" == "YES") } {              puts "MACRO DONUT_FACTORY_IN {*}";              puts "MACRO TEE_FACTORY_IN NOT_THIS_TIME";          } else {              puts "MACRO DONUT_FACTORY_IN NOT_THIS_TIME";              puts "MACRO TEE_FACTORY_IN *";          }          ]
+FACTORY_DEF $(DONUT_FACTORY_IN) DonutFactory    FACTORY_NAME AreaBuilder_donutizer    INPUT FEATURE_TYPE ___POLY___    CONNECT_Z_MODE FIRST_WINS    LINES_AS_SEGMENTS No    GROUP_BY fme_basename    DROP_HOLES No    TAG_HOLES NO    SPLIT_INPUT_DONUTS    AREA_BUILDER_HELPER_MODE    MERGE_INCOMING_ATTR YES    ATTR_ACCUM_MODE "One"    LIST_ATTRS_TO_INCLUDE  { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MODE COMPLETE    OUTPUT DONUT FEATURE_TYPE AreaBuilder_AREA        @RemoveAttributes(tagged_hole)    OUTPUT POLYGON FEATURE_TYPE AreaBuilder_AREA        @RemoveAttributes(tagged_hole)    OUTPUT REJECTED FEATURE_TYPE AreaBuilder_AREA        @RemoveAttributes(fme_rejection_code)
+FACTORY_DEF $(TEE_FACTORY_IN) TeeFactory    FACTORY_NAME AreaBuilder_router    INPUT FEATURE_TYPE ___POLY___    OUTPUT FEATURE_TYPE AreaBuilder_AREA
+FACTORY_DEF * TeeFactory    FACTORY_NAME AreaBuilder_WarnInvalids    INPUT FEATURE_TYPE AreaBuilder___InvalidGeoms___    OUTPUT FEATURE_TYPE AreaBuilder_<REJECTED> fme_rejection_code INVALID_GEOMETRY_VERTICES
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME AreaBuilder_<Rejected> INPUT FEATURE_TYPE AreaBuilder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, AreaBuilder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "LineBuilder (Disabled) Nuker"   INPUT FEATURE_TYPE GeometryFilter_LINE
+FACTORY_DEF {*} ConnectionFactory     FACTORY_NAME LineBuilder     INPUT  FEATURE_TYPE GeometryFilter_LINE     GROUP_BY { fme_feature_type }     FLUSH_WHEN_GROUPS_CHANGE Yes     ACCUM_INPUT_ATTRS One     LIST_ATTRS_TO_INCLUDE { <Unused> }     LIST_ATTRS_TO_INCLUDE_MODE <Unused>     REMOVE_DUPLICATES NO     OUTPUT LINE      FEATURE_TYPE LineBuilder_LINE     OUTPUT BAD_INPUT FEATURE_TYPE LineBuilder_<REJECTED>
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME LineBuilder_<Rejected> INPUT FEATURE_TYPE LineBuilder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, LineBuilder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudCombiner (Disabled) Nuker"   INPUT FEATURE_TYPE GeometryFilter_POINTCLOUD_0_BO1Pq/jpCzk=   INPUT FEATURE_TYPE GeometryFilter_POINT_1_9oK7ioxof/8=
+FACTORY_DEF {*} VectorToPointCloudFactory    FACTORY_NAME PointCloudCombiner___VectorMerger    INPUT  FEATURE_TYPE GeometryFilter_POINT    FLUSH_WHEN_GROUPS_CHANGE No    ACCUMULATE_ATTRIBUTES yes    EXTRACT_RASTER_NODATA no    SPACING "1.0"    MEASURES_TO_PRESERVE    ATTRIBUTES_TO_PRESERVE    REJECT_INVALID_FEATURES yes    OUTPUT COERCED FEATURE_TYPE PointCloudCombiner___MergedVectorFeatures__       @SupplyAttributes(?,fme_basename,PointCloudCombiner)    OUTPUT <REJECTED> FEATURE_TYPE PointCloudCombiner_<REJECTED>
+FACTORY_DEF {*} PointCloudCombinerFactory    FACTORY_NAME PointCloudCombiner___Combiner    INPUT FEATURE_TYPE PointCloudCombiner___MergedVectorFeatures__    FLUSH_WHEN_GROUPS_CHANGE No    ACCUMULATE_ATTRIBUTES yes    REJECT_INVALID_FEATURES yes    OUTPUT MERGED FEATURE_TYPE PointCloudCombiner_OUTPUT    OUTPUT <REJECTED> FEATURE_TYPE PointCloudCombiner_<REJECTED>
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME PointCloudCombiner_<Rejected> INPUT FEATURE_TYPE PointCloudCombiner_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, PointCloudCombiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-FACTORY_DEF * PointCloudCoercerFactory    FACTORY_NAME PointCloudCoercer    INPUT  FEATURE_TYPE GeometryFilter_POINT_0_QhKLo7xp6ec=    INPUT  FEATURE_TYPE GeometryFilter_POINTCLOUD_1_AEKRePVfrWg=    CONVERT_TO POINT    POINT_COMPONENTS    ACCUM_ATTRS YES    POINT_COMPONENTS_PRESERVE_TYPE ATTRIBUTES    PART_NUMBER_ATTR_NAME "_part_number"    REJECT_INVALID_FEATURES YES    OUTPUT COERCED FEATURE_TYPE PointCloudCoercer_COERCED    OUTPUT <REJECTED> FEATURE_TYPE PointCloudCoercer_<REJECTED>
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME PointCloudCoercer_<Rejected> INPUT FEATURE_TYPE PointCloudCoercer_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, PointCloudCoercer<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
-# -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AreaBuilder_AREA TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile1<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_basename<lt>closeparen<gt><comma>Shapefile1<closeparen> GEOMETRY    ROUTE FME_GENERIC LineBuilder_LINE TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile100<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile100<closeparen> GEOMETRY    ROUTE FME_GENERIC PointCloudCombiner_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile10000<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile10000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile10000<closeparen> GEOMETRY    ROUTE FME_GENERIC PointCloudCoercer_COERCED TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile10000<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile10000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile10000<closeparen> GEOMETRY    ROUTE FME_GENERIC TextAdder_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile1000000<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile1000000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile1000000<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AreaBuilder_AREA TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile1<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_basename<lt>closeparen<gt><comma>Shapefile1<closeparen> GEOMETRY    ROUTE FME_GENERIC LineBuilder_LINE TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile100<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile100<closeparen> GEOMETRY    ROUTE FME_GENERIC TextAdder_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile1000000<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile1000000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile1000000<closeparen> GEOMETRY    ROUTE FME_GENERIC PointCloudCombiner_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Shapefile10000<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Shapefile10000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>Shapefile10000<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-ESRISHAPE_1_DEF_TEMPLATE Shapefile10000   SHAPE_GEOMETRY               {FME_GEN_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     No   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
+ESRISHAPE_1_DEF_TEMPLATE Shapefile10000   SHAPE_GEOMETRY               {FME_FIRST_ENCOUNTERED_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     Yes   fme_schema_name_expression   @EvaluateExpression(FDIV,STRING,<at>Value<openparen>GeomType<closeparen>,<at>Value<openparen>fme_feature_type<closeparen>)   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
 # -------------------------------------------------------------------------
-ESRISHAPE_1_DEF_TEMPLATE Shapefile1000000   SHAPE_GEOMETRY               {FME_GEN_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     No   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
+ESRISHAPE_1_DEF_TEMPLATE Shapefile1000000   SHAPE_GEOMETRY               {FME_GEN_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     Yes   fme_schema_name_expression   @EvaluateExpression(FDIV,STRING,<at>Value<openparen>GeomType<closeparen>,<at>Value<openparen>fme_feature_type<closeparen>)   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
 # -------------------------------------------------------------------------
-ESRISHAPE_1_DEF_TEMPLATE Shapefile100   SHAPE_GEOMETRY               {FME_GEN_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     No   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
+ESRISHAPE_1_DEF_TEMPLATE Shapefile100   SHAPE_GEOMETRY               {FME_GEN_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     Yes   fme_schema_name_expression   @EvaluateExpression(FDIV,STRING,<at>Value<openparen>fme_feature_type<closeparen>,<at>Value<openparen>fme_feature_type<closeparen>)   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
 # -------------------------------------------------------------------------
-ESRISHAPE_1_DEF_TEMPLATE Shapefile1   SHAPE_GEOMETRY               {FME_FIRST_ENCOUNTERED_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     No   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
+ESRISHAPE_1_DEF_TEMPLATE Shapefile1   SHAPE_GEOMETRY               {FME_FIRST_ENCOUNTERED_GEOMETRY}   shape_dimension              auto   fme_schema_readers           MAPINFO_1   fme_schema_feature_first     Yes   fme_schema_name_expression   @EvaluateExpression(FDIV,STRING,<at>Value<openparen>GeomType<closeparen>,<at>Value<openparen>fme_basename<closeparen>)   fme_schema_attributes_to_remove ""   AREA                         double   BLOCK_ID                     char(2)   FLAG                         double   LOT                          char(2)   LU90                         double   LUCODE                       double   PLAT                         char(6)   LU95                         double   LULU                         double   SOURCE                       char(10)   PERIMETER                    double   PARCEL_ID                    char(23)   mif_brush_                   long   mif_brus00                   long   mif_brus01                   short
