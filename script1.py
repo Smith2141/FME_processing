@@ -5,8 +5,8 @@ import fmeobjects
 # workspace = r"C:\Users\1\FME_processing\2_mapinfo2mapinfo.fmw"
 workspace = os.path.join(os.getcwd(), '2_mapinfo2mapinfo.fmw')
 # source_dir = input('Укажите папку с файлами: ')
-source_dir = r"C:\LAYER_T"
-target_dir = r"C:\LAYER_T_RES"
+source_dir = os.path.join(os.getcwd(), 'test_fme')
+target_dir = os.path.join(os.getcwd(), r'test_fme\RESULT')
 list_processing_files = []
 # Set workspace parameter s by creating a dictionary of name value pairs
 parameters = dict()
