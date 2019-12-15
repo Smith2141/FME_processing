@@ -1,0 +1,16 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 3
+    num Integer ;
+    Зона Char (254) ;
+    MSK Char (25) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "29bdcf78-d42f-4c88-b467-cedc55385179"
+"\MapInfo\ParentTableID" = "0a980efc-4637-47b0-8ae0-afbab2d0338c"
+end_metadata
