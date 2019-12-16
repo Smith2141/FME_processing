@@ -8,10 +8,10 @@ class WorkspacesPath:
 
 class PatternsDpt:
     PATTERN_OLD_DIR = re.compile(r'([СC]тарое)', re.IGNORECASE)
-    PATTERN_GZPRO_TAB = re.compile(r'(ГЗПРО).*\.tab$', re.IGNORECASE)
+    PATTERN_GZPRO_TAB = re.compile(r'(ГЗПРО|ГЗРО).*\.tab$', re.IGNORECASE)
     PATTERN_VZIS_TAB = re.compile(r'(ВЗИС).*\.tab$', re.IGNORECASE)
     PATTERN_DICTIONARY = {'GZPRO': PATTERN_GZPRO_TAB, 'VZIS': PATTERN_VZIS_TAB}
 
 
 class LayerExtension:
-    tab_layer_file_types = iter(('TAB', 'MAP', 'ID', 'DAT'))
+    tab_layer_file_types = ('TAB', 'MAP', 'ID', 'DAT')
