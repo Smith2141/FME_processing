@@ -5,6 +5,11 @@ from Layers.locators import LayerExtension
 
 
 class ConvertibleTabLayer(BaseLayer):
+    assert
+    try:
+
+
+
     def copy_tab_with_three_files(self, destination_path):
         name_of_the_four_files = str(self.layer_file_path).rpartition('.')[0]
         counter_copied_files = 0
@@ -17,8 +22,9 @@ class ConvertibleTabLayer(BaseLayer):
             else:
                 shutil.copy(required_file_lower_case, destination_path)
                 counter_copied_files += 1
-        assert counter_copied_files == 4
+        assert counter_copied_files == 4, ''
         print(f'Всего скопировано {counter_copied_files} файлов')
+
 
     def from_tab_make_pls_tab(self):
         pass
