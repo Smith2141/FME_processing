@@ -3,7 +3,7 @@ import re
 
 
 class WorkspacesPath:
-    MAP_TO_PL_SCH_MAP = os.path.join(os.getcwd(), r'fme_workspaces/2018mapinfo2mapinfo.fmw')
+    TAB_TO_PL_SCH_TAB = os.path.join(os.getcwd(), r'fme_workspaces/2018mapinfo2mapinfo.fmw')
 
 
 class PatternsDpt:
