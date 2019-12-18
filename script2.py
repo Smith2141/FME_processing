@@ -11,28 +11,31 @@ path_electronic_version_of_DPT = r'C:\Users\1\FME_processing\test_electronic_ver
 # path_the_files_DPT = r'D:\FME_processing\test_fme'
 # path_electronic_version_of_DPT = r'D:\FME_processing\test_electronic_version'
 
-PRIMARY_SEARCH_DICTIONARY = {'GZPRO': [],
-                             'VZIS': [],
-                             'DEMONTAZH': []
-                             }
+# PRIMARY_SEARCH_DICTIONARY = {'GZPRO': [],
+#                              'VZIS': [],
+#                              'DEMONTAZH': []
+#                              }
 
 
-def possible_depth(base_path):
-    base_path = os.path.normpath(base_path).replace('\\', '*')
+def create_primary_search_dictionary(path_the_files_dpt, pattern=PatternsDpt):
+    primary_search_dictionary = {'ГЗПРО': [],
+                                 'ВЗИС': [],
+                                 'ДЕМОНТАЖ': []
+                                 }
+    base_path = os.path.normpath(path_the_files_dpt).replace('\\', '*')
     base_len = len(base_path.split('*'))
-    return base_len
+    for root, dirs, files in os.walk(path_the_files_dpt):
+        if possible_depth(root) <= base_len + 1 and not re.search(pattern.PATTERN_OLD_DIR, root):
+            # print(root, '\n', files)
+            for file in files:
+                for key_name, patt in pattern.PATTERN_DICTIONARY.items():
+                    if re.search(patt, file):
+                        primary_search_dictionary[key_name].append(os.path.join(root, file))
+    return primary_search_dictionary
 
-
-dpt_path_len = possible_depth(path_the_files_DPT)
-for root, dirs, files in os.walk(path_the_files_DPT):
-    if possible_depth(root) <= dpt_path_len + 1 and not re.search(PatternsDpt.PATTERN_OLD_DIR, root):
-        # print(root, '\n', files)
-        for file in files:
-            for layer_name, pattern in PatternsDpt.PATTERN_DICTIONARY.items():
-                if re.search(pattern, file):
-                    PRIMARY_SEARCH_DICTIONARY[layer_name].append(os.path.join(root, file))
-
+#TODO: Допилить функцию создания словаря
 print('-' * 25, '\n', 'В указанной папке найдены слои:')
+founded_files = create_primary_search_dictionary(path_the_files_DPT)
 for layer_name, paths in PRIMARY_SEARCH_DICTIONARY.items():
     print(f'{layer_name} {len(paths)} шт.: ')
     i = 1
