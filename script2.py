@@ -8,7 +8,6 @@ from Layers.common_action import tab_to_pl_sch_tab
 path_the_files_DPT = os.path.join(os.getcwd(), r'test_fme')
 path_electronic_version_of_DPT = os.path.join(os.getcwd(), r'test_electronic_version')
 path_planned_files = os.path.join(os.getcwd(), r'test_electronic_version')
-# path_planned_files = os.path.join(os.getcwd(), r'test_electronic_version\planned_files')
 
 print('-' * 25, '\n', 'В указанной папке найдены слои:')
 work_files_dictionary = create_primary_search_dictionary(path_the_files_DPT)

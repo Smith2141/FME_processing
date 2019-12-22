@@ -24,7 +24,7 @@ def create_primary_search_dictionary(work_path, pattern=PatternsDpt):
 
 
 def tab_to_pl_sch_tab(prim_search_dict, target_dir):
-    # Full path to Workspace, example comes from the FME 2014 Training Full Dataset
+    # Full path to Workspace
     workspace = WorkspacesPath.TAB_TO_PL_SCH_TAB
     # Set workspace parameter s by creating a dictionary of name value pairs
     parameters = dict()
