@@ -24,17 +24,17 @@ def create_primary_search_dictionary(work_path, pattern=PatternsDpt):
 
 
 def tab_to_pl_sch_tab(prim_search_dict, target_dir):
-    # Full path to Workspace, example comes from the FME 2014 Training Full Dataset
+    # Full path to Workspace
     workspace = WorkspacesPath.TAB_TO_PL_SCH_TAB
     # Set workspace parameter s by creating a dictionary of name value pairs
     parameters = dict()
-    parameters['DestDataset_MAPINFO'] = target_dir
-    parameters['FEATURE_TYPES'] = ""
+    parameters['DestDataset_MAPINFO_4'] = target_dir
 
     counter = 0
     for layer_name, paths in prim_search_dict.items():
         for path in paths:
             parameters['SourceDataset_MAPINFO'] = path
+            parameters['FEATURE_TYPES'] = os.path.basename(path).rstrip('.TAB')
             try:
                 # initiate FMEWorkspaceRunner Class
                 runner = fmeobjects.FMEWorkspaceRunner()

@@ -1,7 +1,8 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" C:\Users\1\FME_processing\fme_workspaces\2018mapinfo2mif.fmw
+#        "C:\Program Files\FME\fme.exe" D:\FME_processing\fme_workspaces\2018mapinfo2mif.fmw
+#              --SourceDataset_MAPINFO "D:\FME_processing\test_fme\Lake_27_3.TAB"
 #              --FEATURE_TYPES ""
 #              --DestDataset_MIF "D:\FME_processing\test_fme\RESULT"
 #    
@@ -12,14 +13,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="1181 71"
-#!   DOC_TOP_LEFT="109 61"
+#!   DOC_EXTENTS="750 1e-5"
+#!   DOC_TOP_LEFT="109 132"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="19801"
-#!   FME_DOCUMENT_GUID="f1507871-ddb1-4d26-be19-3124e4be18ee"
-#!   FME_DOCUMENT_PRIORGUID="33b79d40-3de1-4ac8-bf18-ea566afee0bb,65ac0ff9-6115-421f-90a3-fb542c74b8b3,079e5c54-e1a0-41e4-817f-c0c52a1e897e,400aa5d0-1f4e-457d-b0c6-dfff5b3ae7b0"
+#!   FME_BUILD_NUM="18305"
+#!   FME_DOCUMENT_GUID="400aa5d0-1f4e-457d-b0c6-dfff5b3ae7b0"
+#!   FME_DOCUMENT_PRIORGUID="33b79d40-3de1-4ac8-bf18-ea566afee0bb,65ac0ff9-6115-421f-90a3-fb542c74b8b3,079e5c54-e1a0-41e4-817f-c0c52a1e897e"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -27,8 +28,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2019.2.0.0 (20191105 - Build 19801 - WIN64)"
-#!   LAST_SAVE_DATE="2019-12-22T15:45:08"
+#!   LAST_SAVE_BUILD="FME(R) 2018.0.0.3 (20180430 - Build 18305 - WIN64)"
+#!   LAST_SAVE_DATE="2019-12-10T17:23:43"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -36,9 +37,8 @@
 #!   MAX_LOG_FEATURES="200"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="37"
+#!   PYTHON_COMPATIBILITY="27"
 #!   REDIRECT_TERMINATORS="NONE"
-#!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
 #!   SOURCE="NONE"
@@ -47,7 +47,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-867.509 570.006"
+#!   VIEW_POSITION="-537.505 953.135"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -57,7 +57,7 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="MAPINFO"
-#!   DATASET="C:\Users\1\FME_processing\test_fme\Lake_27_3.TAB"
+#!   DATASET="$(SourceDataset_MAPINFO)"
 #!   KEYWORD="MAPINFO_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
@@ -66,7 +66,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="mapinfo_text_fontstyle_shadow char(10) mapinfo_primary_axis float mapinfo_text_fontstyle_blink char(10) mapinfo_text_fontstyle smallint fme_feature_type char(50) mapinfo_text_string char(255) mapinfo_start_angle float multi_reader_full_id integer mapinfo_symbol_file_name char(255) mapinfo_text_line_end_y float mapinfo_text_fontstyle_allcaps char(10) mapinfo_text_line_pen_color integer mapinfo_brush_pattern smallint mapinfo_symbol_style smallint mapinfo_text_line_pen_width integer mapinfo_text_spacing smallint mapinfo_symbol_angle float mapinfo_text_line_pen_pattern integer mapinfo_symbol_font char(50) fme_rotation float fme_text_size float mapinfo_symbol_size integer mapinfo_smooth logical mapinfo_text_fontstyle_inverse char(10) fme_start_angle float multi_reader_id integer mapinfo_pen_width smallint fme_color char(50) fme_dataset char(50) mapinfo_center_xcoord float mapinfo_type char(25) fme_fill_color char(50) mapinfo_text_fontstyle_expanded char(10) mapinfo_text_fontstyle_opaque char(10) mapinfo_rounding float mapinfo_rotation float multi_reader_keyword char(50) mapinfo_brush_foreground integer mapinfo_text_fontsize float mapinfo_center_ycoord float mapinfo_symbol_shape integer fme_basename char(50) mapinfo_text_fontstyle_bold char(10) multi_reader_type char(50) mapinfo_symbol_color integer mapinfo_text_height float mapinfo_text_justification char(30) mapinfo_pen_pattern smallint mapinfo_text_fontbgcolor integer fme_sweep_angle float mapinfo_brush_background integer mapinfo_text_fontstyle_outline char(10) mapinfo_text_linetype integer mapinfo_centroid_y float fme_geometry char(50) mapinfo_centroid_x float mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_fontfgcolor integer fme_type char(50) mapinfo_text_fontname char(50) mapinfo_text_line_end_x float mapinfo_text_width float mapinfo_brush_transparent logical mapinfo_text_fontstyle_halo char(10) fme_secondary_axis float mapinfo_secondary_axis float fme_primary_axis float mapinfo_rounding_height float mapinfo_pen_color integer mapinfo_text_fontstyle_underline char(10) mapinfo_text_fontstyle_italic char(10) mapinfo_sweep_angle float fme_text_string char(50)"
+#!   EXPOSABLE_ATTRS="mapinfo_text_fontstyle_shadow char(10) mapinfo_pen_pattern smallint multi_reader_id integer fme_feature_type char(50) mapinfo_text_line_pen_width integer fme_rotation float mapinfo_brush_foreground integer mapinfo_primary_axis float mapinfo_text_fontstyle_underline char(10) mapinfo_text_fontstyle_allcaps char(10) mapinfo_centroid_x float mapinfo_text_fontstyle_strikeout char(10) mapinfo_text_fontstyle_outline char(10) mapinfo_text_fontstyle_blink char(10) mapinfo_text_line_end_x float mapinfo_text_fontstyle_expanded char(10) mapinfo_symbol_shape integer mapinfo_text_line_pen_pattern integer mapinfo_text_fontstyle smallint mapinfo_pen_width smallint multi_reader_full_id integer mapinfo_brush_pattern smallint mapinfo_brush_background integer mapinfo_text_width float mapinfo_text_fontfgcolor integer mapinfo_center_ycoord float fme_text_size float mapinfo_text_justification char(30) multi_reader_keyword char(50) mapinfo_text_fontstyle_inverse char(10) mapinfo_pen_color integer multi_reader_type char(50) mapinfo_center_xcoord float fme_dataset char(50) fme_fill_color char(50) mapinfo_text_string char(255) fme_text_string char(50) mapinfo_text_fontstyle_opaque char(10) fme_type char(50) fme_sweep_angle float fme_basename char(50) mapinfo_symbol_color integer mapinfo_smooth logical mapinfo_sweep_angle float mapinfo_brush_transparent logical fme_geometry char(50) mapinfo_secondary_axis float mapinfo_text_spacing smallint mapinfo_type char(25) mapinfo_text_linetype integer mapinfo_text_fontsize float mapinfo_symbol_file_name char(255) mapinfo_start_angle float fme_start_angle float mapinfo_rounding float fme_secondary_axis float mapinfo_symbol_style smallint mapinfo_centroid_y float mapinfo_text_fontstyle_halo char(10) mapinfo_text_line_end_y float mapinfo_symbol_angle float fme_primary_axis float mapinfo_rounding_height float mapinfo_text_fontstyle_bold char(10) mapinfo_symbol_font char(50) mapinfo_text_fontstyle_italic char(10) mapinfo_text_fontbgcolor integer fme_color char(50) mapinfo_symbol_size integer mapinfo_text_fontname char(50) mapinfo_text_line_pen_color integer mapinfo_rotation float mapinfo_text_height float"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -120,7 +120,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="mif_pen_width smallint mif_symbol_file_name char(255) mif_secondary_axis float mif_center_ycoord float mif_symbol_angle float mif_pen_pattern smallint mif_center_xcoord float fme_basename char(50) fme_feature_type char(50) mif_text_line_end_y float fme_geometry char(50) mif_text_string char(255) mif_brush_background integer mif_text_justification char(30) mif_text_line_end_x float mif_brush_foreground integer fme_rotation float mif_centroid_y float fme_type char(50) mif_pen_color integer mif_smooth logical fme_dataset char(50) mif_brush_transparent logical mif_text_fontsize float fme_secondary_axis float fme_start_angle float mif_text_linetype integer mif_type char(25) mif_rounding float mif_symbol_style smallint mif_text_fontstyle smallint mif_text_fontbgcolor integer fme_fill_color char(50) mif_symbol_shape integer fme_text_size float mif_text_width float mif_start_angle float mif_text_fontfgcolor integer fme_text_string char(50) mif_primary_axis float mif_text_height float mif_text_spacing smallint fme_sweep_angle float mif_symbol_size integer mif_symbol_font char(50) mif_centroid_x float mif_brush_pattern smallint mif_text_fontname char(50) mif_rotation float fme_color char(50) mif_symbol_color integer mif_sweep_angle float fme_primary_axis float"
+#!   EXPOSABLE_ATTRS="mif_start_angle float fme_type char(50) mif_symbol_file_name char(255) mif_symbol_shape integer mif_text_width float mif_text_height float mif_text_fontfgcolor integer mif_text_fontname char(50) mif_symbol_color integer mif_type char(25) mif_secondary_axis float mif_text_fontstyle smallint mif_centroid_y float mif_sweep_angle float mif_symbol_style smallint mif_center_xcoord float fme_feature_type char(50) fme_primary_axis float fme_sweep_angle float mif_brush_foreground integer mif_rotation float mif_brush_pattern smallint mif_brush_background integer fme_dataset char(50) fme_rotation float mif_text_justification char(30) mif_text_linetype integer fme_start_angle float mif_primary_axis float fme_fill_color char(50) fme_basename char(50) mif_pen_pattern smallint fme_geometry char(50) mif_brush_transparent logical mif_centroid_x float mif_text_fontsize float mif_pen_color integer mif_text_fontbgcolor integer mif_text_line_end_x float mif_text_spacing smallint mif_text_line_end_y float mif_center_ycoord float mif_symbol_angle float fme_text_string char(50) mif_pen_width smallint mif_symbol_size integer mif_symbol_font char(50) mif_text_string char(255) mif_rounding float fme_text_size float fme_secondary_axis float fme_color char(50) mif_smooth logical"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[]= %~!@$&amp;#()^&apos;+-.,`;"
@@ -653,7 +653,7 @@
 #!   IDENTIFIER="2"
 #!   FEAT_GEOMTYPE="mapinfo_text mapinfo_ellipse mapinfo_arc mapinfo_point mapinfo_polyline mapinfo_rectangle mapinfo_rounded_rectangle mapinfo_region mapinfo_custom_point mapinfo_font_point mapinfo_none mapinfo_collection"
 #!   POSITION="109 132"
-#!   BOUNDING_RECT="109 132 431 71"
+#!   BOUNDING_RECT="109 132 -1 -1"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
 #!   KEYWORD="MAPINFO_1"
@@ -681,7 +681,7 @@
 #!   IDENTIFIER="3"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="859 132"
-#!   BOUNDING_RECT="859 132 431 71"
+#!   BOUNDING_RECT="859 132 -1 -1"
 #!   ORDER="500000000000001"
 #!   COLLAPSED="true"
 #!   KEYWORD="MIF_1"
@@ -697,24 +697,15 @@
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
-#! <READER_DATASETS>
-#! <DATASET 
-#!   NAME="MAPINFO_1"
-#!   OVERRIDE="-MAPINFO_1_DATASET"
-#!   DATASET="MAPINFO_1/Lake_27_3.TAB"
-#! />
-#! </READER_DATASETS>
-#! <WRITER_DATASETS>
-#! <DATASET 
-#!   NAME="MIF_1"
-#!   OVERRIDE="-MIF_1_DATASET"
-#!   DATASET="MIF_1/RESULT"
-#! />
-#! </WRITER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES C:&lt;backslash&gt;Users&lt;backslash&gt;1&lt;backslash&gt;FME_processing&lt;backslash&gt;test_fme&lt;backslash&gt;Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|All_Files(*)|* Source MapInfo TAB File(s):"
+#!   DEFAULT_VALUE="D:\FME_processing\test_fme\Lake_27_3.TAB"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES D:&lt;backslash&gt;FME_processing&lt;backslash&gt;test_fme&lt;backslash&gt;Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
@@ -754,13 +745,15 @@
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
-
-FME_PYTHON_VERSION 37
+FME_PYTHON_VERSION 27
 GUI IGNORE SourceDataset_MAPINFO_1,MAPINFO_IN_FME_GROUP_NAMED1_MAPINFO_1,MAPINFO_IN_FME_TABLE_PASSWORD_MAPINFO_1,MAPINFO_IN_USE_SEARCH_ENVELOPE_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MINX_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MINY_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MAXX_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_MAXY_MAPINFO_1,MAPINFO_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MAPINFO_1,MAPINFO_IN_CLIP_TO_ENVELOPE_MAPINFO_1,MAPINFO_IN_NETWORK_AUTHENTICATION_MAPINFO_1,DestDataset_MIF_1,MIF_OUT_FME_GROUP_NAMED1_MIF_1,MIF_OUT_VERSION_MIF_1,MIF_OUT_FME_GROUP_NAMED2_MIF_1,MIF_OUT_WRITE_REGION_CENTROIDS_MIF_1,MIF_OUT_TWO_POINT_LINE_AS_POLYLINE_MIF_1,MIF_OUT_STROKE_ARCS_MIF_1,MIF_OUT_FME_GROUP_NAMED3_MIF_1,MIF_OUT_QUOTE_OUTPUT_VALUES_MIF_1,MIF_OUT_SEPARATOR_MIF_1,MIF_OUT_ENCODING_MIF_1,MIF_OUT_FME_GROUP_NAMED4_MIF_1,MIF_OUT_COORDSYS_STATEMENT_MIF_1,MIF_OUT_MIF_MINX_MIF_1,MIF_OUT_MIF_MINY_MIF_1,MIF_OUT_MIF_MAXX_MIF_1,MIF_OUT_MIF_MAXY_MIF_1
+DEFAULT_MACRO SourceDataset_MAPINFO D:\FME_processing\test_fme\Lake_27_3.TAB
+GUI MULTIFILE SourceDataset_MAPINFO TAB_Files(*.tab)|*.tab|All_Files(*)|* Source MapInfo TAB File(s):
 DEFAULT_MACRO FEATURE_TYPES 
-GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES C:<backslash>Users<backslash>1<backslash>FME_processing<backslash>test_fme<backslash>Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES D:<backslash>FME_processing<backslash>test_fme<backslash>Lake_27_3.TAB,_FORMAT_OVERRIDE_,MAPINFO,_DATASET_OVERRIDE_,SourceDataset_MAPINFO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:
 DEFAULT_MACRO DestDataset_MIF D:\FME_processing\test_fme\RESULT
 GUI DIRNAME DestDataset_MIF Destination MapInfo Folder:
+INCLUDE [ if {{$(SourceDataset_MAPINFO)} == {}} { puts_real {Parameter 'SourceDataset_MAPINFO' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_MIF)} == {}} { puts_real {Parameter 'DestDataset_MIF' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
@@ -768,12 +761,14 @@ READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} MAPINFO
 MULTI_READER_KEYWORD{0} MAPINFO_1
 MULTI_READER_GEN_DIRECTIVES{0} MAPINFO_EXPOSE_FORMAT_ATTRS,,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_MINY,0,FME_TABLE_PASSWORD,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,DYNAMIC_WORKFLOW,yes,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MINX,0
+
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} MIF
 MULTI_WRITER_KEYWORD{0} MIF_1
 #! END_WB_HEADER
+
 #! START_WB_HEADER
 MACRO WB_KEYWORD "MAPINFO_1"
 #! END_WB_HEADER
@@ -796,7 +791,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER MAPINFO MAPINFO_1
-DEFAULT_MACRO SourceDataset_MAPINFO_1 C:\Users\1\FME_processing\test_fme\Lake_27_3.TAB
+DEFAULT_MACRO SourceDataset_MAPINFO_1 $(SourceDataset_MAPINFO)
 GUI MULTIFILE SourceDataset_MAPINFO_1 TAB_Files(*.tab)|*.tab|All_Files(*)|* Source MapInfo TAB File(s):
 # ============================================================================
 # [REG 20070109] We want to allow the user to choose heterogeneous collections
@@ -984,22 +979,23 @@ MIF_1_DATASET "$(DestDataset_MIF_1)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 #! END_WB_HEADER
+
 #! END_HEADER
 
 LOG_FILENAME "$(FME_MF_DIR)2018mapinfo2mif.log"
 LOG_APPEND NO
-LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
 FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_MAPINFO_1 MAPINFO_1
 DEFAULT_MACRO DATASET_KEYWORD_MIF_1 MIF_1
 # -------------------------------------------------------------------------
 
-MAPINFO_1_READER_META_ATTRIBUTES fme_feature_type fme_basename
+MAPINFO_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
 
 # -------------------------------------------------------------------------
 

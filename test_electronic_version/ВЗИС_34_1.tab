@@ -1,0 +1,11 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 4
+    num Integer ;
+    Зона Char (254) ;
+    MSK Char (25) ;
+    d20191106 Char (18) ;
