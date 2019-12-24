@@ -52,3 +52,11 @@ def tab_to_pl_sch_tab(prim_search_dict, target_dir):
             # get rid of FMEWorkspace runner so we don't leave an FME process running
             runner = None
     return f'Преобразовано в план-схему метры {counter} файлов .tab'
+
+
+def from_tab_make_pls_mif(self):
+    pass
+
+
+def from_tab_make_shp(self):
+    pass
